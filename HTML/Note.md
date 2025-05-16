@@ -1,0 +1,160 @@
+## Basic Terminology:-
+
+1. Browser:- It is used application or a software i.e used to communicate with the server that is present around the world wide web(www).
+2. Website:- It is a collection of related web pages.
+3. Webpage:- It is a collection of HTML, CSS, JavaScript, PHP, Java, XML, etc.
+4. Domain Name:- It is the name given for the website.
+5. URL:- It is a Uniform Resource Locator.
+6. HTTP:- It is a protocol used for communication between client and server.
+
+# HTML :-
+
+- It stands for HyperText Markup Language.
+- It is a markup language used to create and add raw elements like image, table, text, audio, video, forms etc. in web pages.
+- HTML is also known as collection of static web pages.
+
+## Structure of HTML:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Name</title>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Paragraph</p>
+</body>
+</html>
+ 
+- <!DOCTYPE html> is the declaration of the document type.
+- <html lang="en"> is the root element of the document.
+- <head> is the container for the metadata of the document.
+- <title> is the title of the document used to display in the title bar of the browser.
+- <body> is the container for the visible content of the document.
+
+## Tags in HTML:-
+
+Pre-defined texts used inside the body of the html document.
+
+- There are two types of tags in HTML:-
+  1. Self Closing Tags
+  2. Double/Paired Tags
+
+# Basic Tags of HTML:-
+
+## Heading Tags:-
+
+-It is used to create text in bolder & bigger size compared to normal text.
+-It has 6 types of heading tags:- h1, h2, h3, h4, h5, h6.
+-h1 is the highest heading tag and h6 is the lowest heading tag.
+
+## Paragraph Tag:- <p> .... </p>
+
+-It is used to create text in normal size.
+
+## Break Tag:- <br>
+
+-It is a single tag used to create a line break.
+-It breaks the line and moves the cursor to the next line.
+
+## Horizontal Rule Tag:- <hr>
+
+-It is a single tag used to create a horizontal line.
+-It breaks the line and move the cursor to the next line, but before moving the cursor to the next line, it creates a horizontal line throughout the page.
+
+## Span Tag:- <span> .... </span>
+
+-It is used to create a text or a block of text.
+-It is an inline element.
+
+# Basic Styles in HTML:-
+
+1. bgcolor:- It is used to change the background color of the page.
+2. text:- It is used to change the text color of the page.
+3. align:- It is used to align the content of the page(left, center, right).
+   Note:- All the above properties are used inside the body tag.
+
+## Text Styles in HTML:-
+
+1. <b> It is used to create a bold text.
+2. <strong> It is used to create a strong/bold text.
+3. <i> It is used to create a italic text.
+4. <em> It is used to create a emphasized/italic text.
+5. <u> It is used to create a underline text.
+6. <ins> It is used to create a insert/underline text.
+7. <del> It is used to create a delete text.
+8. <sub> It is used to create a subscript text.
+9. <sup> It is used to create a superscript text.
+10. <mark> It is used to create a marked text.
+11. <small> It is used to create a small text.
+12. <big> It is used to create a big text.
+
+## pre tag:- <pre>...</pre>
+
+-It is used to display the same structure of elements the way they are created in code editor.
+
+# Multimedia Tags in HTML:-
+
+Multimedia tags are used to add images, videos, audio, etc. in HTML.
+
+## Image Tag:-
+
+-<img> tag is used to display a image on a web page.
+-Attributes/Properties:-
+
+1. src:- It is used to specify the source of the image.
+2. alt:- It is used to specify the alternative text of the image.
+3. height:- It is used to specify the height of the image.
+4. width:- It is used to specify the width of the image.
+
+Syntax:-
+<img src="image url" alt="image description" height="height" width="width">
+
+## Audio Tag:-
+
+-<audio> tag is used to display a audio on a web page.
+-Attributes/Properties:-
+
+1. src:- It is used to specify the source of the audio.
+2. controls:- It gives options to play/pause, playback speed, volume, etc.
+3. preload:- It is used to specify the preload of the audio(metadata, none, auto).
+
+Syntax:-
+<audio src="audio url" controls preload="metadata"></audio>
+
+## Video Tag:-
+
+-<video> tag is used to display a video on a web page.
+-Attributes/Properties:-
+
+1. src:- It is used to specify the source of the video.
+2. controls:- It gives options to play/pause, playback speed, volume, etc.
+3. width:- It is used to specify the width of the video.
+4. height:- It is used to specify the height of the video.
+5. muted:- It mutes the video by default when the page loads.
+6. autoplay:- Starts the video automatically when the page loads.
+7. loop:- Video continue to play in a loop when it ends.
+
+Syntax:-
+<video src="video url" controls width="width" height="height" muted autoplay loop></video>
+
+## Iframe Tag:-
+
+-iframe stands for inline frame where we can use <iframe> tag to display the content of another website on our website.
+
+Syntax:-
+
+<iframe src="url" width="width" height="height" frameborder="0"></iframe>
+
+# Hyperlink in HTML:-
+
+-Anchor tag <a> is used to create a hyperlink that navigates to another web-page or section of the same page.
+-Attributes/Properties:-
+
+1. href:- Stands for Hyperlink Reference. It is used to specify the destination of the hyperlink.
+2. target:- It is used to specify the target of the hyperlink(\_self, \_blank)
+   \_self:- It is used to open the hyperlink in the same tab.
+   \_blank:- It is used to open the hyperlink in a new tab.
+
+Syntax:-
+<a href="url" target="_blank">Link Text</a>
