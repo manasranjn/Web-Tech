@@ -134,3 +134,25 @@ Syntax:-
 Syntax:-
 <a href="url" target="_blank">Link Text</a>
 
+# List:-
+In HTML, a list is a structured way to display a collection of items. There are three types of list available on HTML. They are-
+    i) Ordered List
+    ii) Un-ordered List
+    iii) Definition List
+
+## Ordered List:- <ol> .... </ol>
+-It is a type of list, that structurieses the elements in some specific order, either ascending or descending.
+-<ol> tag is used to create ordered list.
+Attributes:- 
+    type:- 1/a/A/i/I
+    start:- Starting index e.g:- start = 5
+    It starts the list from particular position.
+
+e.g:- 
+    <ol type="i" start="10">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
