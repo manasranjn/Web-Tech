@@ -144,7 +144,7 @@ In HTML, a list is a structured way to display a collection of items. There are 
 -It is a type of list, that structurieses the elements in some specific order, either ascending or descending.
 -<ol> tag is used to create ordered list.
 Attributes:- 
-    type:- 1/a/A/i/I
+    type:- It is used to specify the type of the ordered list.(1, a, A, i, I)
     start:- Starting index e.g:- start = 5
     It starts the list from particular position.
 
@@ -174,3 +174,68 @@ e.g:-
 
 ## Definition List:- <dl> .... </dl>
 -It is used to create no. of definition text and their description/meaning.
+-<dl> tag is used to create definition list.
+-<dd>...</dd> & <dt>...</dt> tags are used to create definition description and definition text respectively. 
+e.g:- 
+    <dl>
+        <dt>Item 1</dt>
+        <dd>Description here</dd>
+
+        <dt>Item 2</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, velit voluptatum id error modi non cum
+            vitae repellendus quos, magni earum ullam, laudantium alias sint. Delectus inventore commodi aliquam maxime!
+        </dd>
+    </dl>
+
+# Table:- 
+-We can create a structure of a table to display the components in the form of cells.
+## Tags used to create the table:- 
+1. <table>...</table>:- It is used to create the structure of table.
+2. <tr>...</tr> (table row):- It is used to create, display multiple cells in one row.
+3. <th> .. </th> (table heading):- It is used to create a heading on bold text in the table.
+4. <td> .. </td> (table data):- It is used to create a cell in the table.
+5. <thead> .. </thead>:- It is used to create the heading of the table.
+6. <tbody> .. </tbody>:- It is used to create the body of the table.
+7. <caption> .. </caption>:- It is used to create the caption of the table.
+
+Attributes of Table:-
+1. border:- It is used to create a border in the table.
+2. cellpadding:- It is used to give a space from the text/content to the corners of the cell.
+3. cellspacing:- It is used to give a space between each and every cells in the table.
+4. align:- It is used to align the table/content.(left,center,right)
+5. collspan:- It is used to merge the cells.
+6. rowspan:- It is used to merge the rows.
+7. bgcolor:- It is used to change the background color of a cell or the entire table.
+
+# Form:-
+Form is a HTML inbuilt structure used to accept inputs from the user in the form of data.
+Tags used to create a form:
+1. <form>..</form>
+   -It is used to create the form structure.
+2. <label>..<label>
+   -It is used to print the name for the inputs.
+3. <input>
+   -It is used to create an element that takes different types of inputs from the user.
+   Attributes of Input tag:- 
+   type:- "text", "date", "range", "submit", "reset", "tel", "number", "radio", "checkbox", "button", "file", "email", "password", "image"
+   - name :- It is used to write identical names for radio buttons.
+   - for :- It is used to label tag to build a connection between adjacent input tag.
+   - required :- It is used to make the input field mandatory to be filled.
+   - placeholder :- It is used to print the text on a input box.
+4. <textarea>..</textarea>
+   -It is used to create an input box which can accepts multiple lines of data in the form of input.
+   Attributes for TextArea:- rows and cols
+5. select and option tag:-
+- <select>...</select> :- It is a wrapper element for multiple options, but it can select only one option.
+- <option>...</option> :- It is used to print multiple options.
+
+# Symantics:-
+- Symantics are the tags used to create divisions inside the body tag.
+- There are two types of symantics available in HTML-
+1. Symantic tags
+- Symantic tags are the tags which have some particular meaning in their name.
+  eg:- header, footer, article, nav, section
+
+2. non-Symantic tags
+- The tags which don't have any particular meaning in their name are known as non-symantic tags.
+  eg:- div, span
