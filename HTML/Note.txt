@@ -156,3 +156,21 @@ e.g:-
         <li>Item 4</li>
         <li>Item 5</li>
     </ol>
+
+## Un-ordered List:- <ul> .... </ul>
+-<ul> tag is used to create un-ordered list.
+-Un-ordered list can't specify the order of items.
+Attributes:- 
+    type:- disc/circle/square
+
+e.g:- 
+    <ul type="circle">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+## Definition List:- <dl> .... </dl>
+-It is used to create no. of definition text and their description/meaning.
