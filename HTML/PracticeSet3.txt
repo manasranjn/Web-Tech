@@ -1,0 +1,11 @@
+1. Create a table with 3 rows and 3 columns containing sample data (like names, age, and city).
+2. Create a timetable for your weekly class schedule using a table.
+3. Create a table that has cells spanning multiple columns (colspan) and rows (rowspan).
+4. Create a form with fields: Name (text), Email (email), Password (password). Add radio buttons for gender selection (Male, Female, Other). Add a dropdown (<select>) for selecting your country. Add a checkbox group for selecting hobbies. Add submit and reset button.
+5. Create an ordered list (<ol>) of your 5 favorite programming languages.
+6. Create an unordered list (<ul>) of grocery items.
+7. Create a nested list showing categories and subcategories (e.g., Fruits → Apple, Banana).
+8. Create a definition list (<dl>) with 3 titles and definitions.
+9. Combine lists and tables: Create a table with one column showing an unordered list of 3 hobbies.
+10. Create a table with two columns, containing one for headings and another for details about yourself. 
+e.g:- Name:    Akash

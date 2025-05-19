@@ -1,0 +1,48 @@
+Practice Set-2
+1. Create a webpage with the title “My Text Formatting Practice”.
+-Inside the body, write a paragraph with:
+Bold text
+Italic text
+Underlined text
+A superscript and 
+subscript
+
+-Use <mark>, <small>, <big>, <del>, and <ins> tags to format a sentence.
+
+2. Add an image from a local folder and another from the web. Set width and height for both.
+
+3. Embed a video using a local file, and apply controls, autoplay, muted, and loop attributes.
+
+4. Embed a YouTube video using an <iframe> tag.
+
+5. Embed a Google Map of your city using an <iframe>.
+
+6. Create three anchor (<a>) tags:
+-One that opens a link in the same tab
+-One that opens in a new tab
+-One that links to another HTML file in your project
+
+7. Create a <p> element and a <pre> element with the same text. Observe the spacing difference.
+
+8. Use semantic tags to create a simple layout(any type of).
+9. Recreate the same layout using <div> instead of semantic tags.
+
+10. Create a complete HTML page with:
+-A header and footer element.
+-A paragraph with text formatting
+-An image and a video
+-A hyperlink to Google
+
+11. Create a page with a green background and white text.
+
+12. Build a personal portfolio page with the following elements:
+-Page title using <h1>
+-Subheading with <h2> (e.g., “About Me”)
+-A paragraph about yourself
+-Your picture using <img>
+-A video or audio about your interests
+-A link to your favorite website
+-Footer with contact info
+
+
+
