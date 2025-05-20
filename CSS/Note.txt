@@ -28,7 +28,55 @@ Syntax:-
 Syntax:- 
 <link rel="stylesheet" href="fileName.css">
 
-Selectors in CSS:- 
+# Selectors in CSS:- 
 CSS selectors are used to select the HTML elements that we want to style.
 1.Element Selector:-
--It is used to select the element based on the name of
+-It is used to select the elements based on their tag name.
+-Element selector selects all the element with the specific tag name in the entire HTML document.
+e.g:- h1{
+    font-size: 20px;
+}
+
+2. Class Selector:- 
+-It selects the HTML elements based on the given class name.
+-Class name can be provide by using "class" attribute.
+-To selects the classs name in CSS we use dot(.) that acts as class selector.
+e.g:- .className{
+    color: red;
+}
+
+3. ID Selector:-
+-It selects the HTML element based on the given ID name.
+-ID name can be provide by using "id" attribute.
+-ID name should be unique in an HTML document.
+-To select the id names in CSS we use hash(#) that acts as ID selector.
+e.g:- #idName{
+    height: 100px;
+}
+
+4. Universal Selector:- 
+-It is used to select all the elements in the HTML document.
+It is denoted as *
+e.g:- *{
+    margin: 0;
+}
+
+5. Group Selector:-
+-It is used to select multiple elements at once.
+e.g:- h1, #idName, .className, p{
+    background-color: black;
+}
+
+# Box-Model in CSS:-
+-Using box model we can specify how an element should be displayed on the web page by giving properties - height & width, padding, border, and margin.
+-The innermost layer of the box model is content itself which includes height and width. Following by padding, border and margin respectively.
+
+## Padding:- It is the inner space between the content and border.
+-Padding values will be applied on the four sides of the content when single value is given for padding.
+-Padding Syntax:- 
+1. padding: 10px (four side equal)
+2. padding: top-bottom left-right
+3. padding: top left-right bottom
+4. padding: top right bottom left
+
+## Border:- 
