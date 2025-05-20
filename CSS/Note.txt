@@ -79,4 +79,62 @@ e.g:- h1, #idName, .className, p{
 3. padding: top left-right bottom
 4. padding: top right bottom left
 
-## Border:- 
+## Border:- Border property is used to define the boundary around an element. 
+-Border for a content can be specify using three values.
+    -border-size 
+    -border-style : solid/dashed/dotted/double
+    -border-color
+e.g:- border: 10px solid green;
+-To curve the edges of border we use border-radius property.
+e.g: border-radius: 5px;
+
+## Margin:- It defines the space between one or more elements.
+-It is the outer white space of an element.
+-It follows the same syntax as padding.
+1. margin: 10px (four side equal)
+2. margin: top-bottom left-right
+3. margin: top left-right bottom
+4. margin: top right bottom left
+
+# Display Properties:- 
+-It specifies how an element must be aligned or stuctured in a web-page.
+-There are 4-types of display properties.
+1. Block:- The elements that are block, will be displayed one by one & occupies 100% width of the web-page.
+-We can change the height and width of a block element.
+
+2. Inline:- The elements will be displayed in the same row where height and width properties will not work.
+
+3. Inline-block:- Displays all the element in the same row and also can change height and width. 
+
+4. None:- The element will not display in the web page.
+
+# Flex-box:-
+-This property is used to structure the elements in row wise or column wise by giving space allocation for individual elements within the flex area.
+Properties:- 
+1. flex-direction:- It specifies from which direction the elements should be aligned.
+Values:-
+flex-direction: row/row-reverse/column/column-reverse ;
+
+2. align-items:- This property is used to align the items vertically in flex area.
+Values:-
+align-items: flex-start/center/flex-end ;
+
+3. justify-content:- This is used to align the elements horizontally in the flex area.
+Values:- 
+justify-content: start/center/end/space-between/space-around/space-evenly
+
+# Grid-Layout:-
+-CSS grid layout is a two dimentional layout system for the web.
+-A grid is a collection of horizontal & vertical lines creating a pattern against which we can line up our design element. They help us to create designs where element don't jumps arround or change width as we move from page to page.
+Properties:-
+display: grid;
+grid-template-column: repeat(4,1fr)/ 3 4 5;
+grid-gap : 20px/ 30px...
+grid-template-rows: 100px/ 200px;
+
+# CSS units :-
+1. px (pixel) - fixed
+2. % (percentage) - percentage is fully depends upon their parent element
+3. vh (viewport height) & vw (viewport width) - it will increases or decrease their size as per the screen size.
+4. vmax - if the screen size can be sqized to a phone screen so our content can be small it breake that and create a new line of content.
+5. em & rem (root units of CSS) em - we can handle all tag by a root element/tag so that it would be fesiable for our content. (relative units, relative to any one) rem - (1rem = 16px)
