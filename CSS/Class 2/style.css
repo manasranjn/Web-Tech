@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Belleza", sans-serif
+}
+.box{
+    height: 500px;
+    width: 1000px;
+    background-color: rgb(227, 148, 52);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: left; */
+    /* justify-content: center; */
+    /* justify-content: right; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* align-items: top; */
+    align-items: center;
+    /* align-items: end; */
+    /* align-items: flex-end; */
+    /* flex-wrap: wrap-reverse; */
+    flex-wrap: wrap;
+    /* gap: 30px; */
+}
+.child{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    /* margin: 10px; */
+    color: white;
+}
+/* 
+nav{
+    display: flex;
+    flex-direction: row;
+    margin: 0 40px;
+    justify-content: space-around;
+} */
+
+.parent{
+    height: 600px;
+    width: 1200px;
+    background-color: coral;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-columns: 200px 180px 230px 150px 200px; */
+
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: 200px 300px; */
+
+    /* gap: 50px; */
+    /* grid-gap: 80px; */
+
+}
+
+#navbar{
+    background-color: white;
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navlinks ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 22px;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navlinks{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.navlinks button{
+    background-color: green;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 22px;
+    color: white;
+}
+
+.container{
+    /* height: 200px;
+    width: 200px; */
+    /* height: 50vh;
+    width: 50vw; */
+    height: 40vmax;
+    width: 50vmax;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
+#text{
+    font-size: 2rem;
+}
+#para{
+    font-size: 2em;
+    /* font-size: 80px; */
+}
