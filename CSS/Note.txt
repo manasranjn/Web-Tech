@@ -13,11 +13,22 @@ Syntax:-
 <p style="color: red;">This is a paragraph</p>
 
 ## Internal CSS:- 
--Used to add styles for multiple elements or writting general styles with the help of style tag inside head tag.
+-Used to add styles for multiple elements or writing general styles with the help of style tag inside head tag.
 -We need selectors to select or target the element which we need to change style.
 Syntax:- 
 <style>
-    selecctor{
+    selector{
         css-property: value;
     }
 </style>
+
+## External CSS:- 
+-Writing styles i a separate CSS file and then connecting it to the HTML document with the help of <link> tag.
+-We use <link> tag inside the head tag to connect the external css.
+Syntax:- 
+<link rel="stylesheet" href="fileName.css">
+
+Selectors in CSS:- 
+CSS selectors are used to select the HTML elements that we want to style.
+1.Element Selector:-
+-It is used to select the element based on the name of
