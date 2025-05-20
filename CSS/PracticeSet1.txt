@@ -1,0 +1,33 @@
+1. Apply CSS to change the background color of the entire page and the text color to white.
+(Try using inline, internal, and external CSS one by one.)
+2. Create an <h1> tag and use internal CSS to:
+Set font-family to Arial
+Set font-size to 36px
+Center the text
+3. Style a <p> element to have:
+Red text color
+Line height of 1.5
+Text spacing of 4px
+4. Create a class named .highlight and use it to style a <span> with:
+Yellow background
+Padding: 10px
+Border: 2px dashed blue
+5. Use ID selector #main-box to style a <div>:
+Set height to 200px, width to 300px
+Background color: light green
+Add a 1px solid blue border
+6. Create a box with the following properties:
+Content: “I am a Box”
+Padding: 20px
+Margin: 30px
+Border: 5px solid black
+Background color: lightgray
+7. Create three <div> elements and apply different display values: block, inline, inline-block. Observe the difference.
+8. Create a flex container with three boxes inside it. Use display: flex and apply the following:
+Set justify-content to space-around
+Set align-items to center
+Set height of the container to 300px
+9. Create a 3x2 grid layout using CSS Grid with 3 columns and 2 rows. Fill each grid cell with a colored box and some text.
+10. Build a simple image gallery using CSS Grid:
+Display 6 images in 3 columns
+Add gap between grid items
