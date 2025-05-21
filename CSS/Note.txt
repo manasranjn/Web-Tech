@@ -67,6 +67,22 @@ e.g:- h1, #idName, .className, p{
     background-color: black;
 }
 
+6. Descendant Selector:- 
+-It is used to select a specific child element within a parent element.
+e.g:- .className p{
+    color: red;
+}
+
+# Pseudo classes:-
+-These are used to add styles to selectors but only when selectors meets certain condition.
+-Pseudo class are written using colon(:)
+e.g:- selector:active/hover
+    
+# Pseudo elements:-
+-It is a keyword added to a selector that lets us style a specific part of the selected element.
+-Double colon(::) is used to write Pseudo elements.
+e.g:- ::after, ::before, ::first-line, ::first-letter
+
 # Box-Model in CSS:-
 -Using box model we can specify how an element should be displayed on the web page by giving properties - height & width, padding, border, and margin.
 -The innermost layer of the box model is content itself which includes height and width. Following by padding, border and margin respectively.
@@ -95,6 +111,19 @@ e.g: border-radius: 5px;
 2. margin: top-bottom left-right
 3. margin: top left-right bottom
 4. margin: top right bottom left
+
+# Box shadow and Text shadow:-
+-Box shadow is used to give a shadow effect for a selected element. Whereas text shadow used for text.
+Syntax:-
+    box-shadow: x-offset y-offset blur color;
+    text-shadow: x-offset y-offset blud color;
+e.g:-
+    .box {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.text {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
 
 # Display Properties:- 
 -It specifies how an element must be aligned or stuctured in a web-page.
@@ -138,3 +167,7 @@ grid-template-rows: 100px/ 200px;
 3. vh (viewport height) & vw (viewport width) - it will increases or decrease their size as per the screen size.
 4. vmax - if the screen size can be sqized to a phone screen so our content can be small it breake that and create a new line of content.
 5. em & rem (root units of CSS) em - we can handle all tag by a root element/tag so that it would be fesiable for our content. (relative units, relative to any one) rem - (1rem = 16px)
+
+Transform Properties:-
+It helps us to transform an element from one form to another form.
+1. Rotate:- 
