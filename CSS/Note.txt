@@ -206,3 +206,22 @@ transition-delay: 2s/3s/10s ...etc
 (or)
 transition: property-name duration timing-function delay
 
+# Position property:-
+-Position property is used as a special method in css to specify the exact structure and positions of each element.
+-Position property uses various methods in css like: Static, relative, absolute, fixed, and sticky to specify the exact position of each element depending on their behaviours.
+- In css we have some preoperties like:-
+    top/right/bottom/left
+    These preoperties are used to change the position of on element.
+-However these properties won't work without mentioning the position preoperty and its methods.
+1. Static:- HTML elements are positioned static by default.
+-These elements are not effected by top/right/bottom/left properties.
+
+2. Relative:- The element is positioned relative to its original position.
+-Setting the top/right/bottom/left properties will move that element from its original position & other elements will not be effected.
+
+3. Absolute:- It positions an element relative to it's parent relative positioned container. If there is no parent container with position relative then it relative to the body and these elements ccan overlap other elements.
+
+4. Fixed:- The element will be fixed permanently at a specified position.
+
+5. Sticky:- The element will behave as normal element & gets fixed once it reaches cirtain point of the webpage.
+- A sticky element toggles between relative + fixed depending on the position value.
