@@ -1,0 +1,23 @@
+1. Create a <div> with position: absolute and place it at the top-right corner of the page.
+2. Create a card layout using a <div> with a white background and apply a soft gray box-shadow to give a raised effect.
+3. Design three different shadow styles:
+-One with a sharp shadow
+-One with a blurred soft shadow
+-One with a top-left blured shadow
+4. Create a hover effect where the shadow becomes darker and offset increases when the user hovers over a box.
+5. Add a glowing text effect using text-shadow on an <h1> element.
+6. Create a box and use transform: rotate to tilt it diagonally.
+7. Scale an image using transform: scale(1.2) when the user hovers over it.
+8. Use transform: translateX() and translateY() to move an element from its original position.
+9. Create a button that smoothly changes its background color and font size when hovered.
+10. Build a box that expands in size (width & height) with smooth animation using transition.
+11. Create a div and when the user hovers over a card, it should move upward and scale slightly with a smooth effect.
+12. Create a sticky header using position: sticky that stays at the top while scrolling.
+13. Design a layout using different position values:
+-A fixed icon on the center-left (position: fixed)
+-An image placed absolutely at the bottom-right corner
+-A normal content section with position: relative
+
+
+Additional Question:- (Optional)
+- Create a image grid having 3 rows and 4 columns, each image should scale-up a little bit when hovered over it. 
