@@ -168,6 +168,41 @@ grid-template-rows: 100px/ 200px;
 4. vmax - if the screen size can be sqized to a phone screen so our content can be small it breake that and create a new line of content.
 5. em & rem (root units of CSS) em - we can handle all tag by a root element/tag so that it would be fesiable for our content. (relative units, relative to any one) rem - (1rem = 16px)
 
-Transform Properties:-
-It helps us to transform an element from one form to another form.
-1. Rotate:- 
+# Transform Properties:-
+-Transform properties are used to transform an element from one form to another form or to move from one position to another position.
+1. Rotate:- It is used to rotate an object in clockwise or anti-clockwise direction.
+-To rotate an element we use degree(deg) as an unit.
+Properties:- 
+    rotateX(deg) -It rotates an element on x-axis.
+    rotateY(deg) -It rotates an element on y-axis.
+    rotateZ(deg) -It rotates an element on z-axis.
+
+2. Skew:- It distorts point of an element by a certain angle in horizontal or vertical direction.
+Properties:- 
+    horizontal:- skewX()
+    horizontal:- skewY()
+
+3. Scale:- It allows us to resize an element compared to its original size.
+-scale>1 will increase the size and scale<1 will decrease the size of an element.
+Properties:- 
+    scale() -It will change the size in all direction
+    scaleX() -It will change the size in x-axis or horizontally.
+    scaleY() -It will change the size in y-axis or vertically.
+
+4. Translate:- It allows us to change the position of an element from it's original position to another position over the x-axis and y-axis. 
+-Translate value is provided in pixels.
+Properties:- 
+    translateX() -It translate the element over x-axis, from left to right or left to right.
+    translateY() -It translate the element over y-axis, from top to bottom or bottom to top.
+    translate(val1, val2) -It translate ther element on both axis.
+
+# Transition :- (to change the state)
+transition enables us to define the transition between two states of an element smoothly.
+Properties:- 
+transition-property: property you want to transition(font-size, color, bg color, all)
+transition-duration: 2s/3s/10s ...etc
+transition-timing-function: ease-in/ease-out/linear/steps(5)
+transition-delay: 2s/3s/10s ...etc
+(or)
+transition: property-name duration timing-function delay
+
