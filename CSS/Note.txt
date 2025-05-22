@@ -225,3 +225,44 @@ transition: property-name duration timing-function delay
 
 5. Sticky:- The element will behave as normal element & gets fixed once it reaches cirtain point of the webpage.
 - A sticky element toggles between relative + fixed depending on the position value.
+
+
+# Responsive Design:- Responsive design ensures a website looks and works well on all devices (desktops, tablets, and phones).
+Techniques:
+-Fluid Grids: Use percentage widths.
+-Flexible Images: max-width: 100%; height: auto;
+-Media Queries: Apply styles based on device size.
+-Responsive Units: Use em, rem, %, vw, vh instead of fixed units.
+
+# CSS Media Queries:- CSS Media Queries are used to apply different styles to different screen sizes or device types.
+Syntax:- 
+@media only (screen-size) and (screen-size) {
+  element {
+    background-color: lightblue;
+  }
+}
+
+Common Breakpoints:
+-Mobile: max-width: 480px
+-Tablet: 481px - 768px
+-Laptop: 769px - 1024px
+-Desktop: 1025px and above
+
+# CSS Animations:- Used to animate transitions between CSS styles using keyframes.
+-To create animation we need keyframes.
+
+## CSS Keyframes:- @keyframes define the behavior of an animation sequence by specifying styles at various points.
+Syntax:-
+@keyframes animation-name {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+Animation Properties:-
+animation-name, animation-duration, animation-delay, animation-iteration-count, animation-timing-function, animation-direction
+(or- short-hand)
+animation: name duration iteration timing-function delay;
