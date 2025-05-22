@@ -1,0 +1,267 @@
+/* .box{
+    height: 200px;
+    width: 200px;
+    background-color: chocolate;
+    margin: 40px;
+    transform: translate(100px, 100px);
+    transition: all 2s ease-in-out;
+} */
+
+*{
+    margin: 0;
+}
+
+/* .parent{
+    height: 600px;
+    width: 600px;
+    background-color: blueviolet;
+}
+.child{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+}
+
+@media (max-width: 425px){
+    .parent{
+        background-color: darkgoldenrod;
+        height: 300px;
+        width: 300px;
+    }
+    .child{
+        background-color: darkolivegreen;
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px){
+    .parent{
+        background-color: rgb(237, 15, 200);
+        height: 400px;
+        width: 400px;
+    }
+    .child{
+        background-color: rgb(16, 198, 218);
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .parent{
+        background-color: rgb(237, 126, 15);
+        height: 500px;
+        width: 500px;
+    }
+    .child{
+        background-color: rgb(16, 43, 218);
+        height: 250px;
+        width: 250px;
+    }
+} */
+
+
+/* #container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(240, 82, 179);
+}
+#container h1{
+    font-size: 25px;
+    color: aliceblue;
+    font-style: italic;
+}
+#container p{
+    color: bisque;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px){
+    #container h1{
+        font-size: 35px;
+    }
+    #container p{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1024px){
+    #container h1{
+        font-size: 45px;
+    }
+    #container p{
+        font-size: 25px;
+    }
+} */
+
+.container{
+    background-color: white;
+    padding: 20px 100px;
+    text-align: center;
+}
+.header h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: #4D4D4D;
+    width: 40%;
+    margin: 0 auto;
+}
+.header p{
+    font-size: 18px;
+    color: #717171;
+    margin: 10px auto;
+}
+
+.grids{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.box{
+    background-color: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.box i{
+    font-size: 25px;
+}
+.box h3{
+    font-size: 30px;
+    color: #4D4D4D;
+    margin: 10px auto;
+    width: 70%;
+}
+.box p{
+    font-size: 16px;
+    color: #717171;
+}
+
+@media (max-width: 426px){
+.container{
+    padding: 10px 30px;
+}
+.header h1{
+    font-size: 25px;
+    width: 100%;
+}
+.header p{
+    font-size: 15px;
+}
+.grids{
+    flex-direction: column;
+    gap: 30px;
+}
+.box{
+    padding: 15px 10px;
+    width: auto;
+}
+.box i{
+    font-size: 22px;
+}
+.box h3{
+    font-size: 22px;
+}
+.box p{
+    font-size: 14px;
+}
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+.container{
+    padding: 15px 50px;
+}
+.header h1{
+    font-size: 35px;
+    width: 70%;
+}
+.header p{
+    font-size: 18px;
+}
+.grids{
+    flex-direction: row;
+    gap: 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+.header h1{
+    width: 65%;
+}
+.box{
+    padding: 15px 10px;
+    width: auto;
+}
+.box h3{
+    font-size: 26px;
+}
+}
+
+
+.spinner{
+    background-color: white;
+    border: 5px solid black;
+    border-top: 5px solid white;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    /* transition: 2s ease-in-out; */
+    /* animation-name: spinner;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate; */
+
+    animation: spinner 1s ease 0s infinite normal;
+}
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(100deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#animation{
+    color: red;
+}
+#animation span{
+    color: rgb(4, 146, 99);
+}
+
+.dropBall{
+    background-color: wheat;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.ball{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: brown;
+    position: relative;
+    animation: drop 2s ease-in-out 0s infinite alternate;
+}
+@keyframes drop{
+    from{
+        top: 0px;
+        left: 0px;
+    }
+    to{
+        top: 450px;
+    }
+}
