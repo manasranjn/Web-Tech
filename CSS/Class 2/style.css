@@ -6,7 +6,7 @@
     font-family: "Belleza", sans-serif
 }
 .box{
-    height: 500px;
+    height: 300px;
     width: 1000px;
     background-color: rgb(227, 148, 52);
     display: flex;
@@ -18,12 +18,13 @@
     /* justify-content: space-evenly; */
     /* justify-content: space-around; */
     /* align-items: top; */
-    align-items: center;
+    /* align-items: center; */
     /* align-items: end; */
     /* align-items: flex-end; */
     /* flex-wrap: wrap-reverse; */
     flex-wrap: wrap;
     /* gap: 30px; */
+    overflow: scroll;
 }
 .child{
     height: 150px;
@@ -96,11 +97,14 @@ nav{
 }
 
 input{
-    background-color: rgb(192, 192, 60);
-    padding: 10px 20px;
+    /* background-color: rgb(192, 192, 60); */
+    padding: 10px 20px 10px 0px;
     border-radius: 5px;
-    border: none;
+    /* border: none; */
     font-size: 20px;
+}
+input::placeholder{
+    color: red;
 }
 input:focus{
     color: red;
