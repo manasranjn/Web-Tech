@@ -1,1 +1,48 @@
 # JavaScript:-
+-JavaScript is a scripting and programming language, introduced to perform live-scripting or dynamic responsive on a web-page.
+-Netscape Communications hired 'Brendan Eich' to develop a scripting language for their browser, Netscape Navigator. Eich created JavaScript in just 10 days.
+-The language was first called "MOCHA", then LiveScript, and finally JavaScript—not because it's related to Java, but as a marketing decision to capitalize on Java’s popularity.
+-JavaScript is used for building logics of a web page.
+-JavaScript is a high level programming language, used in both client side as well as server side.
+-Currently we are using JavaScript version 6 i.e ES6(Echma script 6), which is also called as vanilla JavaScript.
+-Node JS is the run time environment of JavaScript.
+
+## What is Scripting language ?
+-A scripting language is a type of programming language used to automate tasks that executes line by line.
+-For example - JavaScript, Python, PHP... etc.
+
+# Variable Keywords in JS:-
+-Variable keywords are used to declare a variable and to initialize a value to variables.
+-There are three types of variable keywords:-
+    -var
+    -let
+    -const 
+## var:- If a variable is decalred using var keyword then we can re-declare and re-initialize the same variable.
+
+## let:- If a variable is decalred using let keyword then we can re-initialize the same variable but we can't re-declare the same variable.
+
+## const:- Const stands for constant variable.
+-If a variable is decalred using const keyword then neither we re-declare nor re-initialize the same variable.
+
+# Datatypes in JS:- 
+-Datatypes are used to define which type of value we're storing on a variable.
+- By using 'typeof' operator we can check the datatype of a varibale.
+-There are two types of datatypes in JavaScript:-
+    1.Primitive type
+    2.Non-primitive type
+
+1. Primitive-type:-
+## Number type:- Represents all the possible types of numeric values; like - positive, negative, fraction, whole number, etc..
+
+## boolean type:- It has only two types of values, i.e true and false.
+-In JavaScript value of true is 1 and value of false is 0.
+
+## null type:- Null means nothing, which is inherited from Object type. It stores nothing.
+
+## undefined type:-When a variable is declared but not assigned a value, it is automatically initialized with undefined.
+
+## Symbol type:– Used for creating unique values (Symbol("unique"))
+-To create a Symbol type variable we need Symbol() operator.
+
+## BigInt type:– Handles very large numbers (BigInt())
+-To create a BigInt type varibale we need BigInt()m operator.
