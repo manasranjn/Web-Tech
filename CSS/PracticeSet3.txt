@@ -1,0 +1,11 @@
+Create a simple personal portfolio website using HTML and CSS. Your portfolio should include the following sections:
+
+Header: With your name and a short tagline or job title.
+About Me: A paragraph introducing yourself and your interests or skills.
+Projects: At least two project descriptions, each with a title, short summary, and a link (can be a placeholder).
+Contact: A section with your email address or a contact form.
+Footer: With your name and the current year.
+
+Add basic styling using CSS to make it visually appealing (colors, fonts, spacing).
+Use a simple layout (flexbox or grid).
+Add hover effects to links or buttons.
