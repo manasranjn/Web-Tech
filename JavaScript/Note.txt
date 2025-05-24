@@ -138,3 +138,19 @@ Syntax :- if (condition){
         statement 
     } else { 
         statement }
+
+## Switch case :-
+-Switch statement is used to execute different blocks of code based on the value of an expression. 
+-It provides a cleaner alternative to multiple if-else conditions.
+
+Syntax:- 
+switch (expression) {
+    case value1:
+        // Code to execute if expression === value1
+        break;
+    case value2:
+        // Code to execute if expression === value2
+        break;
+    default:
+        // Code to execute if no case matches
+}
