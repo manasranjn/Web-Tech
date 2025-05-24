@@ -30,6 +30,7 @@
 -There are two types of datatypes in JavaScript:-
     1.Primitive type
     2.Non-primitive type
+Note:- JavaScript is a dynamic typed language that means, datatype of a variable is assigned based on the value passed by the user during runtime.
 
 1. Primitive-type:-
 ## Number type:- Represents all the possible types of numeric values; like - positive, negative, fraction, whole number, etc..
@@ -45,4 +46,95 @@
 -To create a Symbol type variable we need Symbol() operator.
 
 ## BigInt type:– Handles very large numbers (BigInt())
--To create a BigInt type varibale we need BigInt()m operator.
+-To create a BigInt type varibale we need BigInt() operator.
+
+2. Non-primitive type or Reference Datatype
+-Reference datatypes are the type of datatype which can hold multiple element in a single variable.
+-Reference datatypes are -> array, object, function
+## Array :-Array is a collection of heterogenious(different datatypes) type of data.
+-Array indexing start from "0", and to access any value we can use the index position, and arrays are dynamic in size.
+-Arrays are used to store multiple values inside a single variable.
+ex. let arr = ["hari", "sita", "ram"] 0 1 2
+
+## Object :-Objects are complex data types used to store collection of key value pairs.
+-Objects can contain various datatypes, including primitive and non-primitive.
+-Keys are unique within an object, and they are used to access the values.
+-We can access the value of an object by using dot notation (object.keyName) or bracket notation (object["keyname"]).
+
+ex:-
+let obj = { name : "hari", 
+    phone : 56789032, 
+    address : "bhubaneswar" 
+    }
+-In the above example left side element are the keys & right side elements are the values of that key.
+
+# Function :-
+-functions are the block of code or set of instruction which are used to perform some specif task.
+-function reduce our code complexity and help organize logic, improve readability, and make code reusable.
+-We need 'function' keyword to create a function in JS.
+
+Syntax :-
+function functionName(){ 
+    //instruction
+ }
+
+function calling ->
+functionName();
+
+# Operators in JS:- Operators are symbols used to perform operations on one or more variable and values.
+
+## Arithmetic Operator:-
+1. Addition (+): Adds two operands.
+2. Subtraction (-): Subtracts right operand from left operand.
+3. Multiplication (*): Multiplies two operands.
+4. Division (/): Divides left operand by right operand.
+5. Modulus (%): Returns the remainder of the division of left operand by right operand.
+6. Exponent (**): Used to raise a number to a power.
+
+## Assignment Operator:- 
+1. Simple Assignment (=): Assigns a value to a variable.
+2. Addition Assignment (+=): Adds the right operand to the left operand and assigns the result to left operand.
+3. Subtraction Assignment (-=): Subtracts the right operand from the left operand and assigns the result to left operand.
+4. Multiplication Assignment (*=): Multiplies the left operand by the right operand and assigns the result to left operand.
+5. Division Assignment (/=): Divides the left operand by the right operand and assigns the result to left operand.
+6. Remainder Assignment (%=): Assigns the remainder of division between left and right operands to left operand.
+7. Exponentiation Assignment (**=): Raises the left operand to the power of the right operand and assigns the result to left operand.
+
+## Comparision Operator:- 
+1. Equal to (==): Compares if two operands are equal.
+2. Not equal to (!=): Compares if two operands are not equal.
+3. Strict equal to (===): Compares if two operands are equal and of the same data type.
+4. Strict not equal to (!==): Compares if two operands are not equal and of the same data type.
+5. Greater than (>): Checks if left operand is greater than right operand.
+6. Less than (<): Checks if left operand is greater than or equal to right operand.
+7. Greater than equal to (>=): Checks if left operand is greater than or equal to right operand.
+8. Less than equal to (<=): Checks if left operand is less than or equal to right operand.
+
+## Logical Opercators :-
+1. Logical AND (&&): Returns true if both operands are true.
+2. Logical OR (||): Returns true if either of the operands is true.
+3. Logical NOT (!): Returns the opposite of the operand's boolean value.
+
+# Conditional Statement :-
+-To implement some condition in the code.
+-There are 3 types of conditional statements are there
+## if Condition :-
+-When we have one statement which we want to execute based on a condition then we use ifcondition. If the condition is true then statement will execute.
+Syntax :- if (condition){ statement }
+
+## if-else Condition :-
+-When we have two statements but one condition then we use if-else condition.
+-If the condition is true then statement under if block will execute if the condition is false then the else block will execute. otherwise false.
+Syntax :- if (condition){ statement } else { statement }
+
+## if-elif condition :-
+-When we have multiple statement and multiple condition then we use elseif condition.
+Syntax :- if (condition){ 
+    statement 
+    } 
+    else if(condition){ 
+        statement 
+    } else if(condition){ 
+        statement 
+    } else { 
+        statement }
