@@ -155,3 +155,46 @@ switch (expression) {
         // Code to execute if no case matches
 }
 
+# Loops in JS:-
+When we have to run the same set of instruction over and over again, each time with a different or with same value then we use loops.
+
+## for loop:-
+- for loops provides concise way of writting the loop structure containing initializaton, condition, and iteration in one line.
+-A for loop repeats until a specified condition evaluates to false.
+Syntax:-
+for(initializaton; condition; iteration){
+    //instruction
+}
+
+## while loop:- 
+- When we know starting point but we don't know the ending point, we use while loop.
+Syntax:-
+initializaton;
+while(condition){
+    //instruction
+    iteration;
+}
+
+## do-while loop:-
+- do-while loop is similar to the while loop, but the only difference is that it executes the instruction first then it checks the condition. That's why even if the condition is false still the block of code will execute at-least once.
+Syntax:-
+initializaton;
+do{
+    //instruction
+    iteration;
+}while(condition);
+
+## for-of loop:-
+- for-of is a loop that iterates through the values of an iterable (such as an array or string).
+- It directly provides each value of the iterable, which can be processed within the loop.
+Syntax:- 
+for(let iterator of variable){
+    //instruction
+}
+
+## for-in loop:-
+- for-in is a loop that iterates through the keys of an object.
+Syntax:- 
+for(let iterator in variable){
+    //instruction
+}
