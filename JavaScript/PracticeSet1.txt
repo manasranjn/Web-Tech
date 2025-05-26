@@ -1,0 +1,12 @@
+1. Create a variable of each type: string, number, boolean, undefined, and null. Log them to the console.
+2. Check whether a number is even or odd using the modulus % operator.
+3. Use comparison operators to check if a number is greater than, less than, or equal to another number.
+4. Concatenate a string and a number, and check the result's datatype using typeof.
+5. Print numbers from 1 to 10 using a for, while loop.
+6. Write a do-while loop that prints numbers from 5 to 1.
+7. Create an array of 5 fruits. Print each fruit using a loop.
+8. Add an item to the end and the beginning of an array using push() and unshift().
+9. Add and replace some new items from 3rd index on the original array using splice() method.
+10. Design a simple webpage with a sticky header and a footer.
+11. Create a product card with an image, title, price, and “Buy Now” button using HTML and CSS.
+12. Add hover animations to buttons using transition and transform.
