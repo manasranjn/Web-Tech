@@ -288,3 +288,30 @@ Syntax:- string.split("separator")
 
 10. length:- It is an operator used to find the length of a string.
 Syntax:- string.length
+
+# Function in JS:- 
+-Functions are a set of instruction or block of code used to perform some specific task.
+-There are two types of functions:-
+    -Pre-defined functions
+    -User-defined Functions
+
+## Pre-defined function:-
+-A function which is already written by JS developers with some specific task is known as pre-defined function.
+e.g:- push(), pop(), log(),....
+
+## User-defined function:- 
+- A function which is declared and written some instruction by the user is known as user-defined function.
+e.g: normal function,...
+-In JS to return a output from a function, we use "return" keyword.
+-There are two way we can create a function-
+i)-Type-A(Without parameter):- A function without parameters does not require any external input when called.
+-It simply executes a set of instructions.
+e.g:- def greet():
+    print("Hello, everyone!")
+greet()
+
+ii)-Type-B(With parameter):- A function with parameters allows us to pass values to customize its behavior.
+e.g:- def greet(name):
+    print(f"Hello, {name}!")
+greet("Manas")  
+
