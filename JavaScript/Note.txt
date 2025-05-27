@@ -35,6 +35,10 @@ Note:- JavaScript is a dynamic typed language that means, datatype of a variable
 1. Primitive-type:-
 ## Number type:- Represents all the possible types of numeric values; like - positive, negative, fraction, whole number, etc..
 
+## String type:- Anything enclosed within single(' ') or double(" ") quote is known as string in JS.
+-Basically String is a sequence of character used to represent text.
+-We can access each character by using index numbers. string[0], string[1].... .
+
 ## boolean type:- It has only two types of values, i.e true and false.
 -In JavaScript value of true is 1 and value of false is 0.
 
@@ -241,4 +245,15 @@ Syntax:- array.toString()
 -If the element is present in the array then it returns true else it returns false.
 Syntax:- array.includes()
 
-# String and it's methods
+# String and it's 
+-Strings in JS are immutable, meaning once created their values can't be change. 
+
+## Template String:- 
+-The collection of character that is written inside backtick(``) is considered as 'template string'.
+-The advantage of using template string is- 
+i)It let's user to interpolin the dynamic variable of JS inside the string.
+ii)It lets user to initialize multiple lines of string.
+
+## Template Literals:-
+By using `${variableName}` we can create a dynamic variable that can be access inside an template string.
+Syntax:- `This is a template literals ${variableName}`
