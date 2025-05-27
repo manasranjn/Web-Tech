@@ -73,7 +73,7 @@ let obj = { name : "hari",
 -In the above example left side element are the keys & right side elements are the values of that key.
 
 # Function :-
--functions are the block of code or set of instruction which are used to perform some specif task.
+-functions are the block of code or set of instruction which are used to perform some specific task.
 -function reduce our code complexity and help organize logic, improve readability, and make code reusable.
 -We need 'function' keyword to create a function in JS.
 
@@ -203,7 +203,7 @@ for(let iterator in variable){
     //instruction
 }
 
-# Array inbuild methods:-
+# Array inbuilt methods:-
 -Arrays have a variety of built-in methods that help manipulate and process data efficiently.
 1. push():- It is used to add numbers of elements into an array at it's last index position.
 Syntax:- array.push(newElemets)
@@ -219,7 +219,7 @@ Syntax:- array.unshift(newElemets)
 -It will make all other remaining elements in the array to shift to it's previous index position.
 Syntax:- array.shift()
 
-5. splice():- It is used to ad or remove elements from any specif index position.
+5. splice():- It is used to ad or remove elements from any specific index position.
 -It has 3 arguments-
     -starting index
     -delete count
@@ -245,7 +245,7 @@ Syntax:- array.toString()
 -If the element is present in the array then it returns true else it returns false.
 Syntax:- array.includes()
 
-# String and it's 
+# String and it's methods:-
 -Strings in JS are immutable, meaning once created their values can't be change. 
 
 ## Template String:- 
@@ -257,3 +257,34 @@ ii)It lets user to initialize multiple lines of string.
 ## Template Literals:-
 By using `${variableName}` we can create a dynamic variable that can be access inside an template string.
 Syntax:- `This is a template literals ${variableName}`
+
+## String inbuilt methods:- 
+1. indexOf():- It returns the first index occurrence of a specific substring within the original string.
+Syntax:- string.indexOf("subString")
+
+2. lastIndexOf():- It returns the last index occurrence of a specific substring within the original string.
+Syntax:- string.lastIndexOf("subString", endIndex)
+
+3. chatAt():- It returns the character at the specified index in the original string.
+Syntax:- string.chatAt(indexPosition)
+
+4. toUpperCase():- It converts all the characters in the string to uppercase.
+Syntax:- string.toUpperCase()
+
+5. toLowerCase():- It converts all the characters in the string to lowercase.
+Syntax:- string.toLowerCase()
+
+6. replace():- It replaces first occurrence of a specified substring with another substring in the original string.
+Syntax:- string.replace("searchString", "newString")
+
+7. replaceAll():- It replaces all occurrence of a specified substring with another substring in the original string.
+Syntax:- string.replaceAll("searchString", "newString")
+
+8. slice():- Extracts a section and returns a substring from start inex and end index but end index is excluded.
+Syntax:- string.slice(startIndex, endIndex)
+
+9. split():- It splits the string into an array of strings based on a specific separator.
+Syntax:- string.split("separator")
+
+10. length:- It is an operator used to find the length of a string.
+Syntax:- string.length
