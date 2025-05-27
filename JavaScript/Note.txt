@@ -198,3 +198,47 @@ Syntax:-
 for(let iterator in variable){
     //instruction
 }
+
+# Array inbuild methods:-
+-Arrays have a variety of built-in methods that help manipulate and process data efficiently.
+1. push():- It is used to add numbers of elements into an array at it's last index position.
+Syntax:- array.push(newElemets)
+
+2. pop():- It is used to remove one element from an array from it's last index position.
+Syntax:- array.pop()
+
+3. unshift():- It is used to add numbers of elements into an array at it's starting index position.
+-The previous index position in the array will be switched  by the new elements, so the original elements in the aray will switch to it's next index position.
+Syntax:- array.unshift(newElemets)
+
+4. shift():- It is used to remove one element from the starting index position from the original array.
+-It will make all other remaining elements in the array to shift to it's previous index position.
+Syntax:- array.shift()
+
+5. splice():- It is used to ad or remove elements from any specif index position.
+-It has 3 arguments-
+    -starting index
+    -delete count
+    -newElemets
+-From the start index we can delete no of values and add new elements from same index position.
+Syntax:- array.splice(startIndex, deleteCount, newElemets)
+
+6. slice():- It is used to create a sub-array from an original array.
+- It can't affect the original array.
+- slice() takes two arguments-
+    -start index
+    -end index
+-It takes out the elements from the start index, till the end index excluding the end index.
+Syntax:- array.slice(startIndex, endIndex)
+
+7. reverse():- It is used to reverse the order of elements based on their index position.
+Syntax:- array.reverse()
+
+8. toString():- It is used to convert all the array elements into a single string.
+Syntax:- array.toString()
+
+9. includes():- It is used to find the existance of an element in the array.
+-If the element is present in the array then it returns true else it returns false.
+Syntax:- array.includes()
+
+# String and it's methods
