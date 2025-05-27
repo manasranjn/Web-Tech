@@ -1,0 +1,12 @@
+1.Create an array of colors and use a for-of loop to print each color.
+2. Create an object with key-value pairs like {name: "Alice", age: 25} and use a for-in loop to log each key and value.
+3. Use forEach() to iterate over an array of numbers and log the square of each number.
+4. Create an array of marks and use forEach() to print "Pass" or "Fail" for each mark (pass >= 35).
+5. Use length, toUpperCase() and toLowerCase() on the string "JavaScript" and log the results.
+6. Use slice() to extract "Script" from "JavaScript".
+7. Replace "apples" with "mangoes" in the string "I like apples" using replace().
+8. Use split() to turn the string "apple,banana,grapes" into an array.
+9. Create a normal function called greet that logs "Hello, World!".
+10. Write an arrow function that returns the square of a number.
+11. Create an anonymous function and assign it to a variable that logs "I am anonymous".
+12. Create a function that takes a name as an argument and returns "Hello, [name]". Use both normal and arrow function versions.
