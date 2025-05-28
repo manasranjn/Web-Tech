@@ -315,3 +315,49 @@ e.g:- def greet(name):
     print(f"Hello, {name}!")
 greet("Manas")  
 
+## Types of user-defined function:-
+1. Normal function:- A function which is declared using both function keyword and function name is known as normal function. 
+Syntax:- function functionName(parameter){
+    //instruction
+}
+
+2. Anonymous function:- A function which is declared without a function name but declared using function keyword and stored in a variable is called as anonymous function.
+Syntax:- const variableName = function(){
+    //instruction
+}
+
+3. Arrow function:- A function without a function keyword. 
+-Instead of function keyword we use arrow symbol.
+Syntax:- const functionName = ()=>{
+    //instruction
+}
+
+4. Callback function:- It is a function which is used to pass as an argument to another function.
+Syntax:- ()=>{
+    //instruction
+}
+
+# forEach() :-
+-It is a looping condition where the iterator of forEach loop will iterates through every elements in the array.
+Syntax:- array.forEach((iterator)=>{
+    //instruction
+})
+-It takes a Callback function as an argument in which the user will pass the iterator(accumulator) that iterates through every element of the array.
+
+# Array methods:-
+10. map():- It is used to traverse(visit) every element in the array.
+-It uses a callback function as an argument. 
+-Callback function uses accumulator as an argument, where each item will store once at a time starting from zero index.
+Syntax:- array.map((item)=>{
+    //instruction
+})
+
+11. filter():- It is used to traverse every element in the array and it will return a sub-array based on some condition.
+-If the condition is true then it will return the value else it will skip.
+Syntax:- array.filter((item)=>{
+    return condition;
+})
+
+12. reduce():- It is used to reduce multiple elements of an array into a single value.
+-It accepts a callback function that has two arguments; initial value and accumulator.
+Syntax:- array.reduce((initialValue, accumulator)=> initialValue += accumulator; 0)

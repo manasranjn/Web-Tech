@@ -6,7 +6,6 @@ const square = (a) => {
 const printName = (name) => {
     console.log(`Hello ${name}`);
 }
-
 // printName("Manas")
 
 
