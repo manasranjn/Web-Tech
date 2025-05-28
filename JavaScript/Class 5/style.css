@@ -1,0 +1,35 @@
+:root{
+    --primary-color: #3b82f6;
+    --secondary-color: #f3f4f6;
+    --dark-color: #1f2937;
+}
+/* .box{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid var(--dark-color);
+    border-radius: 10px;
+} */
+
+#box{
+    background-image: url("../../MainAfter.jpg");
+    height: 200px;
+    width: 500px;
+    background-size: cover;
+    /* background-repeat: no-repeat ; */
+    background-position: center;
+}
+.container{
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid var(--dark-color);
+    border-radius: 10px;
+}
+.container h1{
+    /* color: #3B3B1A; */
+    /* color: rgb(255,0,250); */
+    color: rgba(255,0,250, 0.8);
+}
