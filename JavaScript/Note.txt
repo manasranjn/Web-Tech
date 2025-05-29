@@ -379,3 +379,11 @@ Syntax:- document.getElementsByTagName("p")
 
 4. getElementsByName():- It returns a collection of elements with a given name attribute.
 Syntax:- document.getElementsByName("name")
+
+5. querySelector():- It returns the first element within the document that matches the specified selector.
+-It uses CSS_style selector mechanism to select elements (.className, #idName, tagName).
+Syntax:- document.querySelector("selector")
+
+6. querySelectorAll():- It is used to select and return the collection fo Nodes or elements using CSS selector mechanism. (.className, #idName, tagName)
+-It selects all the nodes that matches the specified selector.
+Syntax:- document.querySelectorAll("selector")
