@@ -366,3 +366,16 @@ Syntax:- array.reduce((initialValue, accumulator)=> initialValue += accumulator,
 -The document object model is a programming interface that provides a structured representation of HTML and XML document.
 -It defines the logican structure of documents and the way a document is accessed and manipulated.
 -It represents the document as a tree like structure, where each node represents a part of the document(elements, attribute, text, comment).
+
+## DOM Selection methods:-
+1. getElementById():- It selects an element from the document by ID name, which must be unique within the document.
+Syntax:- document.getElementById("idName")
+
+2. getElementsByClassName():- It returns a HTMLCollection of elements with the specified class name.
+Syntax:- document.getElementsByClassName("className")
+
+3. getElementsByTagName():- It returns a HTMLCollection of elements based on their tag name withing the document. 
+Syntax:- document.getElementsByTagName("p")
+
+4. getElementsByName():- It returns a collection of elements with a given name attribute.
+Syntax:- document.getElementsByName("name")
