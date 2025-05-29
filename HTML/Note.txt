@@ -11,7 +11,6 @@
 - It is a markup language used to create and add raw elements like image, table, text, audio, video, forms etc. in web pages.
 - HTML is also known as collection of static web pages.
 
-- UTF-8 (Unicode Transformation Format 8-bit) is a character encoding standard that supports almost all characters and symbols from various languages and scripts worldwide. It ensures that text on your web page displays correctly, regardless of language or special characters used.
 
 ## Structure of HTML:-
 <!DOCTYPE html>
@@ -30,6 +29,7 @@
 - <head> is the container for the metadata of the document.
 - <title> is the title of the document used to display in the title bar of the browser.
 - <body> is the container for the visible content of the document.
+- UTF-8 (Unicode Transformation Format 8-bit) is a character encoding standard that supports almost all characters and symbols from various languages and scripts worldwide. It ensures that text on your web page displays correctly, regardless of language or special characters used.
 
 ## Tags in HTML:-
 Pre-defined texts used inside the body of the html document.
