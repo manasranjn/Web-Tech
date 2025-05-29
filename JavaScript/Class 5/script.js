@@ -39,4 +39,6 @@ let filteredMark = marks.filter((mark) => {
 
 //! reduce()
 const totalMark = marks.reduce((sum, mark) => sum += mark, 0)
-console.log(totalMark);
+// console.log(totalMark);
+
+// console.log(2 * false);
