@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+header{
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 140px;
+}
+header .left{
+    display: flex;
+    align-items: center;
+}
+header .left input{
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.167);
+    border-radius: 3px;
+    padding: 0 30px;
+}
+header .left i{
+    position: relative;
+    left: 25px;
+    font-size: 12px;
+}
+header .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .right select{
+    border: none;
+}
+header .right button{
+    background-color: #F84464;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    padding: 6px 12px;
+}
+header .right button:active{
+    background-color: red;
+}
+header .right i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav{
+    background-color: #F5F5F5;
+    height: 40px;
+    padding: 0px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlinks ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color: black;
+}
+.offers ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+}
+.offers ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+marquee{
+    padding: 10px;
+    background-color: #EBEBEB;
+}
+marquee img{
+    border-radius: 10px;
+    padding: 0 3px;
+}
+
+.container{
+    padding: 10px 140px;
+    background-color: white;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading h3{
+    font-size: 25px;
+}
+.heading a{
+    color: #F84464;
+    text-decoration: none;
+}
+.movies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    padding: 10px 0px;
+    overflow: hidden;
+}
+.movies .movieBox{
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.movies .movieBox img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.movies .movieBox h4{
+    font-size: 20px;
+    margin: 5px 0px;
+}
+.movies .movieBox p{
+    color: gray;
+    
+}

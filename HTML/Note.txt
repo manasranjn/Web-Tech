@@ -1,5 +1,5 @@
 ## Basic Terminology:-
-1. Browser:- It is used application or a software i.e used to communicate with the server that is present around the world wide web(www).
+1. Browser:- It is an application or a software i.e used to communicate with the server that is present around the world wide web(www).
 2. Website:- It is a collection of related web pages.
 3. Webpage:- It is a collection of HTML, CSS, JavaScript, PHP, Java, XML, etc.
 4. Domain Name:- It is the name given for the website.
