@@ -306,13 +306,15 @@ e.g: normal function,...
 -There are two way we can create a function-
 i)-Type-A(Without parameter):- A function without parameters does not require any external input when called.
 -It simply executes a set of instructions.
-e.g:- def greet():
+e.g:- function greet(){
     print("Hello, everyone!")
+}
 greet()
 
 ii)-Type-B(With parameter):- A function with parameters allows us to pass values to customize its behavior.
-e.g:- def greet(name):
+e.g:- function greet(name){
     print(f"Hello, {name}!")
+}
 greet("Manas")  
 
 ## Types of user-defined function:-
