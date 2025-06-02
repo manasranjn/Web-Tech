@@ -411,3 +411,52 @@ Syntax:- document.querySelectorAll("selector")
 
 ##Delete element:-
 -node.remove() -> remove/delete the node
+
+# Prompt in JavaScript:-
+-prompt() is a built-in function that allows users to input text.
+-It displays a dialog box with an optional message and an input field.
+-e.g:- let userName = prompt("Enter your name:");
+console.log("Hello, " + userName);
+
+# Alert in JavaScript:- 
+-alert() is a built-in function used to display messages in a pop-up box.
+-It pauses script execution until the user closes the alert.
+-Useful for notifications or warnings.
+-e.g:- alert("This is an alert message!");
+
+# Event in Javascript :-
+-The change in the state of an object is known as event.
+-Events in JavaScript allow us to interact with web pages dynamically.
+-Events are interactions that occur within a webpage.
+## Types of Events:-
+-Mouse Events: click, dblclick, mousedown, mouseup, mouseover, mouseout,...
+-Keyboard Events: keydown, keypress, keyup,...
+-Form Events: submit, change, focus, blur,...
+-Window Events: load, resize, scroll,...
+
+# Event Hnadling in JavaScript:-
+-JavaScript allows us to respond to user actions like clicks, key presses, and mouse movements through event handling.
+-Event handlers are functions that execute when an event occurs.
+Syntax:- node.event = () => { // handle here }
+
+## Event Object in JavaScript:-
+The Event Object is a special object in JavaScript that contains details about an event that occurs, such as a button click, mouse movement, or keyboard press. 
+-All event handlers have access to the event object, which provides various properties and methods.
+Syntax:
+node.event = (e) => {
+// handle event here
+}
+-Some common properties of Event Object (`e`):
+- 'e.target' :- Refers to the element that triggered the event.
+- 'e.type' :- Returns the type of the event (e.g., "click", "keydown").
+
+## Event Listener in JavaScript:-
+-The Event Listener is a method used to listen for an event on an element and execute a callback function when the event occurs.
+Syntax:-
+node.addEventListener(event, callback);
+node.removeEventListener(event, callback);
+
+> Note: When removing an event listener, the callback function reference must be the same as when it was added.
+Key Points:
+- `addEventListener()` allows adding multiple events on the same element without overwriting previous ones.
+- `removeEventListener()` requires the exact same function reference that was used in `addEventListener()`.

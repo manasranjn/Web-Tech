@@ -231,13 +231,13 @@ Tags used to create a form:
 - <select>...</select> :- It is a wrapper element for multiple options, but it can select only one option.
 - <option>...</option> :- It is used to print multiple options.
 
-# Symantics:-
-- Symantics are the tags used to create divisions inside the body tag.
-- There are two types of symantics available in HTML-
-1. Symantic tags
-- Symantic tags are the tags which have some particular meaning in their name.
+# Semantics:-
+- Semantics are the tags used to create divisions inside the body tag.
+- There are two types of semantics available in HTML-
+1. Semantic tags
+- Semantic tags are the tags which have some particular meaning in their name.
   eg:- header, footer, article, nav, section
 
-2. non-Symantic tags
+2. non-Semantic tags
 - The tags which don't have any particular meaning in their name are known as non-symantic tags.
   eg:- div, span
