@@ -1,0 +1,14 @@
+1. Write a function that returns an array of unique values from [1, 2, 2, 3, 4, 4, 5].
+2. Given an array of objects with name and age, return an array of names of people older than 18.
+3. Write a function that capitalizes the first letter of each word in a sentence.
+4. Use document.querySelectorAll() to select all elements with class card and change their background color.
+5. Write a function that takes a number as input and returns true if it's prime.
+6. Convert this function into arrow function
+function multiply(a, b) {
+  return a * b;
+}
+7. Write a function that accepts a string and returns the number of vowels in it.
+8. Use for-of loop to iterate over an array of strings and print each in uppercase.
+9. Write a function that returns the factorial of a number using a loop.
+10. Use filter() to return only the even numbers from [1, 2, 3, 4, 5, 6].
+11. Given a string, return a new string with all spaces removed.
