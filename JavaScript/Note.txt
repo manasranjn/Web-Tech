@@ -369,6 +369,15 @@ Syntax:- array.reduce((initialValue, accumulator)=> initialValue += accumulator,
 -It defines the logican structure of documents and the way a document is accessed and manipulated.
 -It represents the document as a tree like structure, where each node represents a part of the document(elements, attribute, text, comment).
 
+## Why we used DOM in Javascript :-
+-JavaScript can change all the HTML element in the page.
+-JavaScript can create, delete or edit any HTML node in the document.
+-JavaScript can also manipulate CSS styling directly.
+
+## Windows object :-
+-The window object represents an open window in a browser. It is a browser object & it automatically created by browser.
+-It is also a global object with lots of properties & method.
+
 ## DOM Selection methods:-
 1. getElementById():- It selects an element from the document by ID name, which must be unique within the document.
 Syntax:- document.getElementById("idName")
@@ -389,3 +398,16 @@ Syntax:- document.querySelector("selector")
 6. querySelectorAll():- It is used to select and return the collection fo Nodes or elements using CSS selector mechanism. (.className, #idName, tagName)
 -It selects all the nodes that matches the specified selector.
 Syntax:- document.querySelectorAll("selector")
+
+## Attribute Manipulation:- 
+-getAttribute(attr): Retrieves the value of the specified attribute from an element.
+-setAttribute(attr, value): Sets or updates the value of a specified attribute on an element.
+
+##Insert Element :-
+-node.append(ele) -> adds at the end of node (inside)
+-node.prepend(ele) -> adds at the start of node (inside)
+-node.after(ele) -> adds after the node (outside)
+-node.before(ele) -> adds before the node (outside)
+
+##Delete element:-
+-node.remove() -> remove/delete the node
