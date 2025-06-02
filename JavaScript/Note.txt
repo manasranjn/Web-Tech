@@ -369,6 +369,15 @@ Syntax:- array.reduce((initialValue, accumulator)=> initialValue += accumulator,
 -It defines the logican structure of documents and the way a document is accessed and manipulated.
 -It represents the document as a tree like structure, where each node represents a part of the document(elements, attribute, text, comment).
 
+## Why we used DOM in Javascript :-
+-JavaScript can change all the HTML element in the page.
+-JavaScript can create, delete or edit any HTML node in the document.
+-JavaScript can also manipulate CSS styling directly.
+
+## Windows object :-
+-The window object represents an open window in a browser. It is a browser object & it automatically created by browser.
+-It is also a global object with lots of properties & method.
+
 ## DOM Selection methods:-
 1. getElementById():- It selects an element from the document by ID name, which must be unique within the document.
 Syntax:- document.getElementById("idName")
@@ -389,3 +398,65 @@ Syntax:- document.querySelector("selector")
 6. querySelectorAll():- It is used to select and return the collection fo Nodes or elements using CSS selector mechanism. (.className, #idName, tagName)
 -It selects all the nodes that matches the specified selector.
 Syntax:- document.querySelectorAll("selector")
+
+## Attribute Manipulation:- 
+-getAttribute(attr): Retrieves the value of the specified attribute from an element.
+-setAttribute(attr, value): Sets or updates the value of a specified attribute on an element.
+
+##Insert Element :-
+-node.append(ele) -> adds at the end of node (inside)
+-node.prepend(ele) -> adds at the start of node (inside)
+-node.after(ele) -> adds after the node (outside)
+-node.before(ele) -> adds before the node (outside)
+
+##Delete element:-
+-node.remove() -> remove/delete the node
+
+# Prompt in JavaScript:-
+-prompt() is a built-in function that allows users to input text.
+-It displays a dialog box with an optional message and an input field.
+-e.g:- let userName = prompt("Enter your name:");
+console.log("Hello, " + userName);
+
+# Alert in JavaScript:- 
+-alert() is a built-in function used to display messages in a pop-up box.
+-It pauses script execution until the user closes the alert.
+-Useful for notifications or warnings.
+-e.g:- alert("This is an alert message!");
+
+# Event in Javascript :-
+-The change in the state of an object is known as event.
+-Events in JavaScript allow us to interact with web pages dynamically.
+-Events are interactions that occur within a webpage.
+## Types of Events:-
+-Mouse Events: click, dblclick, mousedown, mouseup, mouseover, mouseout,...
+-Keyboard Events: keydown, keypress, keyup,...
+-Form Events: submit, change, focus, blur,...
+-Window Events: load, resize, scroll,...
+
+# Event Hnadling in JavaScript:-
+-JavaScript allows us to respond to user actions like clicks, key presses, and mouse movements through event handling.
+-Event handlers are functions that execute when an event occurs.
+Syntax:- node.event = () => { // handle here }
+
+## Event Object in JavaScript:-
+The Event Object is a special object in JavaScript that contains details about an event that occurs, such as a button click, mouse movement, or keyboard press. 
+-All event handlers have access to the event object, which provides various properties and methods.
+Syntax:
+node.event = (e) => {
+// handle event here
+}
+-Some common properties of Event Object (`e`):
+- 'e.target' :- Refers to the element that triggered the event.
+- 'e.type' :- Returns the type of the event (e.g., "click", "keydown").
+
+## Event Listener in JavaScript:-
+-The Event Listener is a method used to listen for an event on an element and execute a callback function when the event occurs.
+Syntax:-
+node.addEventListener(event, callback);
+node.removeEventListener(event, callback);
+
+> Note: When removing an event listener, the callback function reference must be the same as when it was added.
+Key Points:
+- `addEventListener()` allows adding multiple events on the same element without overwriting previous ones.
+- `removeEventListener()` requires the exact same function reference that was used in `addEventListener()`.
