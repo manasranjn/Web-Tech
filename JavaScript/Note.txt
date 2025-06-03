@@ -458,5 +458,5 @@ node.removeEventListener(event, callback);
 
 > Note: When removing an event listener, the callback function reference must be the same as when it was added.
 Key Points:
-- `addEventListener()` allows adding multiple events on the same element without overwriting previous ones.
-- `removeEventListener()` requires the exact same function reference that was used in `addEventListener()`.
+- 'addEventListener()' allows adding multiple events on the same element without overwriting previous ones.
+- 'removeEventListener()' requires the exact same function reference that was used in 'addEventListener()'.
