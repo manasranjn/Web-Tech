@@ -460,3 +460,69 @@ node.removeEventListener(event, callback);
 Key Points:
 - 'addEventListener()' allows adding multiple events on the same element without overwriting previous ones.
 - 'removeEventListener()' requires the exact same function reference that was used in 'addEventListener()'.
+
+# Prototype (Special Object) in JavaScript :-
+-In JavaScript, every object has an internal property called prototype, which acts as a blueprint for other objects. 
+-Prototypes allow objects to inherit properties and methods from other objects, promoting code reusability.
+
+Key Points:-
+1. Setting Prototype: We can set the prototype using '__proto__' or 'Object.create()'.
+2. Method Overriding: If an object and its prototype have the same method, the object's method takes precedence.
+
+# Classes in JavaScript:-
+-A class in JavaScript is a template for creating objects. -It allows defining properties (state) and methods (behavior) that objects created from the class will have.
+Syntax:-
+class ClassName {
+  constructor() {
+    // Initialization code
+  }
+  method1() {
+    // Method definition
+  }
+}
+let myObj = new ClassName(); // Creating an object
+
+# Constructor in JavaScript:-
+-A constructor is a special method inside a class that is automatically called when an object is created using the `new` keyword. 
+-It is used to initialize object properties.
+e.g:- class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  introduce() {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    );
+  }
+}
+const user = new Person("Alice", 25);
+user.introduce(); 
+
+# Inheritance in JavaScript:-
+-Inheritance allows a child class to inherit properties and methods from a parent class. 
+-This avoids code duplication and promotes reusability.
+Syntax:-
+class Parent {
+  // Properties & methods
+}
+class Child extends Parent {
+  // Properties & methods
+}
+
+Note :- if child & parent have same property , child methods will be used(method overiding)
+
+# Status code :-
+200 -> ok
+201 -> created
+202 -> accepted
+300 -> multiple choice
+302 -> found
+400 -> bad request
+402 -> payment required
+404 -> Not found
+406 -> not accepted
+408 -> request timeout
+500 -> internal server error
+502 -> bad gateway
+504 -> gateway timeout
