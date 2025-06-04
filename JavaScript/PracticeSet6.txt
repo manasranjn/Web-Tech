@@ -1,0 +1,10 @@
+1. Write a function to check whether a number is prime.
+2. Write a function to find the factorial of a number.
+3. Check whether a given number is even or odd.
+4. Count the number of vowels in a string.
+5. Check whether a string is a palindrome (e.g., "madam").
+6. Reverse a given string.
+7. Check whether a given year is a leap year.
+8. Create a function that returns the Fibonacci sequence up to n terms.
+9. Write a function to remove duplicates from an array.
+10. Swap two variables without using a third variable.
