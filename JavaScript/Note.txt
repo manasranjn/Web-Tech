@@ -526,3 +526,26 @@ Note :- if child & parent have same property , child methods will be used(method
 500 -> internal server error
 502 -> bad gateway
 504 -> gateway timeout
+
+# Sync in Javascript :-
+## Synchronous :-
+-Synchronous means the code runs in a particular sequence of instruction given in the program.
+-Each instruction waits for the previous instruction to complete its execution.
+
+## Asynchronous :-
+-Due to synchronous programming , sometimes imp. instruction get blocked due to some previous instruction, which couses a delay in the UI.
+-Asynchronous code execution allows to execute next instruction immediatelly and doesn't block the flow.
+
+# Callback Hell:-
+-Callback hell refers to a situation where multiple nested callbacks are used in asynchronous JavaScript, forming a pyramid-like structure. This makes the code difficult to read, debug, and maintain.
+
+Example of Callback Hell-
+Let's say we want to perform a sequence of asynchronous operations:
+1. Fetch user data
+2. Get user posts
+3. Get comments on the first post
+
+Problems with Callback Hell:
+- Hard to read and maintain
+- Difficult to debug errors
+- Code structure grows into a pyramid shape (hard to refactor)
