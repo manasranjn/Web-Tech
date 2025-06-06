@@ -549,3 +549,41 @@ Problems with Callback Hell:
 - Hard to read and maintain
 - Difficult to debug errors
 - Code structure grows into a pyramid shape (hard to refactor)
+
+#Promise :-
+-It is a solution of callback hell.
+-It is an object in JavaScript.
+-Promise is a way of handling a request and response between the client and the server.
+syntax :- let promise = new Promise((resolve, reject) => { // statement })
+
+-Promise have 3 stages:-
+1)pending - The initial stage of promise
+2)resolve - The response is successfull
+3)reject - Response is failed
+
+-If the response is successfull then promise accepts the response using .then() block.
+Syntax:- promise.then((res) => {......})
+-If the response is failed then promise uses .catch() block.
+Syntax:- promise.catch((err) => {......})
+
+## Fetch-Api :-
+the fetch API provides an interface for fetching data.
+it uses Request & Response objects.
+The Fetch() method is used to fetch a data.
+syntax :- let promise = fetch(URL)
+
+# Async & Await in Javascript :-
+async function always returns a promise.
+syntax :- async function myFunc(){ // statement }
+Note :- await pauses the execution of its surrounding async function until the promise is settled.
+
+# Operations on Objects in JS:-
+## Add a new Key:- 
+
+## Update the Object:-
+
+## Delete Operator in Object:-
+
+13) sort() method :-
+
+# Hoisting in JS:-
