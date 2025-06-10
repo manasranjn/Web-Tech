@@ -98,7 +98,6 @@ body{
 
 @media(max-width: 449px){
     .card{
-        /* margin: 10px auto 0; */
         padding: 15px;
     }
     .search input{
@@ -129,25 +128,3 @@ body{
     }
 }
 
-@media(min-width: 290px) and (max-width: 389px){
-    .card{
-        margin: 10px auto 0;
-        padding: 20px;
-    }
-    .search input{
-        padding-left: 10px;
-        height: 45px;
-        margin-right: 10px;
-        font-size: 17px;
-    }
-    .search button{
-        width: 45px;
-        height: 45px;
-    }
-    .col p{
-        font-size: 13px;
-    }
-    .col img{
-        width: 30px;
-    }
-}

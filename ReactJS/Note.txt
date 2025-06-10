@@ -1,0 +1,707 @@
+Q. What is Multi-page-application ?
+
+- It is an application where it will be having multiple pages, or multiple HTML files.
+- If we try to navigate from one page to another page everytime it is going to refresh or each time DOM structure will be created.
+- So this makes applications slower.
+- We can create multi-page-application using only HTML, CSS and JavaScript.
+
+Q. What is Single-page Application ?
+
+- It is an application where it will be having single page, or single HTML file.
+- If we try to navigate from one page to another page it will not gonna refresh, because we will be staying in a the same HTML file, but we are moving from one component to another component.
+- So this makes applications faster.
+- To create a Single-page application(SPA) we need some advance concept like angula, jQuery or React.JS etc.. .
+
+# ReactJS
+
+- It is a JavaScript library (collection of pre-defined codes).
+- It is used to build user interfaces.
+
+## Features of ReactJS
+
+1. Single-Page-Application (SPA)
+
+- e.g :- Whatsapp, facebook, Gmail, etc ..
+
+2. Virtual DOM
+3. Component based Architecture(CBA):- React follows CBA, because we can reuse the components, better code maintainability.
+
+- Web pages will be divided into small parts and that small parts are called components.
+- Components can be reused in different web pages.
+
+## Folder Structure of ReactJS
+
+    After successfully installation of react.js, we will be getting some default folders and files.
+
+1. node_modules :
+
+- It is a folder where all the pre-defined codes and dependencies of react.js will be present.
+- We don't need to change anything in this folder.
+
+2. public :
+
+- This folder conatins the main structure of the webpage.
+  The only important file we have to maintain is "index.html".
+
+3. src :
+
+- It is a source folder where we are going to write our codes.
+- The 2 important files we have to maintain is "index.js"/main.jsx and "App.js".
+  - index.js : It is considered as a root file of react.js
+  - App.js : It is considered as parent component of react.js
+
+4. package.json & package-lock.json :
+
+- These are the two files where it is considered as directories of the react folder.
+- It will give all the information about libraries present in the project.
+
+## Rules while creating a Component in ReactJS
+
+1. First letter should be capital.
+2. It should be written in PascalCase.
+3. File extension of component is ".js" or ".jsx".
+   e.g : App.jsx , App.js , Content.jsx
+
+# What is JSX ?
+
+- it is a combitation of JavaScript and XML (Extensible Markup Language).
+
+## Difference between HTML and XML
+
+1. - In HTML we will be using an attribute as "class"
+
+- In XML we will be using an attribute as "className"
+
+2. - All the events in HTML we use are in lowercase.
+     e.g : onclick, onmouseover
+
+- In XML we use events in camelCase.
+  e.g: onMouseOver, onClick
+
+3. - In HTML we can write two or more different tags/elements
+     e.g: <h1> This is heading 1</h1>
+     <h1> This is heading 2</h1>
+
+- In XML we have to wrap all the elements into one parent container.
+  e.g: <div>
+  <h1> This is heading 1</h1>
+  <h1> This is heading 2</h1>
+  </div>
+
+# React Project Setup
+
+## Using CRA(create-react-app)
+
+- npx create-react-app <project-name>
+- cd <project-name>
+- npm start (or) npm run start
+
+## Using Vite
+
+- npm create vite@latest <project-name>
+- cd <project-name>
+- npm install
+- npm run dev
+
+- After installation of react-project, we will be getting some default folders and files.
+  Now we have to maintain two important files in "src" folder - index.js(main.jsx) and App.jsx.
+
+1. index.js(main.jsx) :
+
+- It is considered as a root file of react.js project.
+- We are using this file to create root between index.html and App.jsx.
+
+2. App.jsx :
+
+- It is considered as parent component of react.js project.
+- It is a component where we are going to write our codes.
+
+index.js(main.jsx) :
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import { StrictMode } from "react";
+
+const root = createRoot(document.getElementById("root"));
+root.render(
+<StrictMode>
+<App />
+</StrictMode>
+);
+
+App.jsx :
+import React from "react";
+
+const App = () => {
+return (
+
+<div>
+<h1>App Component</h1>
+</div>
+);
+};
+
+export default App;
+
+- After installation setup we have to create a new folder named "Components" inside "src" folder.
+- After creating "Components" folder, "App" component will be called as parent component.
+- Whatever component we create inside "Components" folder will be called as child component.
+  e.g:- Navbar.jsx, Footer.jsx, Content.jsx
+  Navbar.jsx :
+  import React from "react";
+  const Navbar = () => {
+  return (
+  <div>
+  <h1>Navbar</h1>
+  </div>
+  );
+  };
+
+export default Navbar;
+
+Content.jsx :
+import React from "react";
+
+const Content = () => {
+return (
+
+<div>
+<h1>Content </h1>
+</div>
+);
+};
+export default Content;
+
+Footer.jsx :
+import React from "react";
+const Footer = () => {
+return (
+
+<div>
+<h1>Footer</h1>
+</div>
+);
+};
+
+export default Footer;
+
+App.jsx :
+import React from "react";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Content from "./Components/Content";
+
+const App = () => {
+return (
+
+<div>
+<Navbar />
+<h1>App Component</h1>
+<Content />
+<Footer />
+</div>
+);
+};
+
+export default App;
+
+## Types of Components
+
+- There are 2 types of components in react.
+  1. Class Based Component
+  2. Functional Component or Function Based Component
+
+# Difference between Class Component and Functional Component
+
+- Class Component :-
+  - Use class keyword and class name
+  - Statefull
+  - It has no Hooks
+  - It has lifecycle methods
+  - It use render() method
+  - Syntax:
+    import React from "react";
+    import { Component } from "react";
+
+class ClassComponentName extends Component {
+render() {
+return (
+
+<div>
+<h1>Class Component</h1>
+</div>
+);
+}
+}
+export default ClassComponent;
+
+- Functional Component :-
+  - Use function keyword and function name
+  - Stateless
+  - It has Hooks
+  - It doesn't have lifecycle methods
+  - It doesn't use render() method
+  - Syntax:
+    import React from "react";
+    const Navbar = () => {
+    return (
+    <div>
+    <h1>Navbar</h1>
+    </div>
+    );
+    };
+
+export default Navbar;
+
+# Props
+
+- Props are inbuilt features of react.
+- Props are used to pass data from parent to child component.
+- Props are immutable, it means once the value is passed from parent component, it can't be changed.
+- Props are uni-directional.
+
+e.g :-
+
+- Write a program to send a string data as props.
+  App.jsx :
+  import React from "react";
+  import Content from "./Components/Content";
+
+const App = () => {
+return (
+
+<div>
+<Content name="Rahul" />
+</div>
+);
+};
+
+export default App;
+
+Content.jsx :
+import React from "react";
+const Content = (props) => {
+return (
+
+<div>
+<h1>{props.name}</h1>
+</div>
+);
+};
+export default Content;
+
+- Write a program to send an array as props.
+  App.jsx :
+  import React from "react";
+  import Content from "./Components/Content";
+
+const App = () => {
+return (
+
+<div>
+<Content mark={[1, 2, 3, 4, 5]} />
+</div>
+)
+};
+
+export default App;
+
+Content.jsx :
+import React from "react";
+const Content = ({mark}) => {
+return (
+
+<div>
+<h1>
+      Mark: 
+        {mark.map((item) => (
+          <p>{item}</p>
+        ))}
+      </h1>
+</div>
+);
+};
+export default Content;
+
+- Write a program to send an object as props.
+  App.jsx :
+  import React from "react";
+  import Content from "./Components/Content";
+
+const App = () => {
+return (
+
+<div>
+<Content name={{ firstName: "Rahul", lastName: "Gupta" }} />
+</div>
+);
+};
+
+export default App;
+
+Content.jsx :
+import React from "react";
+const Content = (props) => {
+return (
+
+<div>
+<h1>{props.name.firstName}</h1>
+<h1>{props.name.lastName}</h1>
+</div>
+);
+};
+export default Content;
+
+# Props Drilling
+
+- It is a process by which we can pass the data from one part of the react component tree to another by going through other parts that does not need the data but only help in passing it around.
+  e.g : App -> Content -> SubContent
+
+Example:-
+import React from "react";
+import Content from "./Components/Content";
+const App = () => {
+return (
+
+<div>
+<Content name="Nikita" course="B.Tech" place="Cuttack" />
+</div>
+)}
+export default App;
+
+Content.jsx :
+import React from "react";
+import SubContent from "./Components/SubContent";
+const Content = (props) => {
+return (
+
+<div>
+<h1>SubContent Component</h1>
+<SubContent name={props.name} course={props.course} place={props.place} />
+</div>
+)};
+export default Content;
+
+SubContent.jsx :
+import React from "react";
+const SubContent = (props) => {
+return (
+
+<div>
+<h1>{props.name}</h1>
+<h1>{props.course}</h1>
+<h1>{props.place}</h1>
+</div>
+)}
+export default SubContent;
+
+# Hooks:
+
+- Hooks are like inbuilt methods in react.
+- hooks always starts with a prefix "use".
+- Whenever we want to use a hook, we have to import it from "react", import { useState } from "react". Import statement is mandatory.
+- Hooks are only used in functional component.
+- We have many Hooks in react, these are some of them:
+  - useState
+  - useEffect
+  - useReducer ... etc
+
+# States in React:
+
+- States are used to create dynamic data in the UI.
+- States are mutable, states value can be changed.
+- States are local, states can only be used inside the component.
+- By default Functional Component doesn't have states. But we can add states using Hooks "useStates".
+
+## UseState:
+
+- It is a Hook where we use it in Functional Component to create states.
+- We can pass or store any type of data in the states.(string, number, object, array, boolean)
+- Syntax:
+  const [state, setState] = useState(initialState);
+  state -> Current value of the state/ identifier.
+  setState -> Function to update the state.
+  useState -> It is a Hook
+  initialState -> It is a default value of the state.
+
+Example:-
+Write a program to create a counter using useState Hook.
+
+App.jsx :
+import React from "react";
+import Counter from "./Components/Counter";
+import "./App.css";
+
+const App = () => {
+return (
+
+<div id="app">
+<Counter />
+</div>
+);
+};
+
+export default App;
+
+Counter.jsx :
+import React, { useState } from "react";
+
+const Counter = () => {
+const [counter, setCounter] = useState(0);
+// console.log(counter);
+
+const increment = () => {
+setCounter(counter + 1);
+};
+
+const decrement = () => {
+setCounter(counter - 1);
+};
+
+const reset = () => {
+setCounter(0);
+};
+
+return (
+
+<div>
+<h1 className="count">Count is: {counter}</h1>
+<button className="btn" onClick={increment}>
+Increment
+</button>
+<button className="btn" onClick={decrement}>
+Decrement
+</button>
+<button className="btn" onClick={() => setCounter(counter + 5)}>
+Increment by 5
+</button>
+<button className="btn" onClick={reset}>
+Reset
+</button>
+</div>
+);
+};
+
+export default Counter;
+
+# Types of CSS in React:
+
+1. Inline CSS :
+
+- It is an tyoe of css where we will be applying for individually inside one particular tag using style attribute.
+- The CSS properties should be writen in camelCase inside an expression like style={{ color: "red" }} in the form of Object inside the style attribute of the tag.
+
+2. Style Object :
+
+- In style object we write the styles in a object, which written outside the JSX and inside the same component.
+
+3. Global CSS :
+
+- It is a type of CSS where we will be maintaining one CSS file for the entire react project.
+- It will target all the Components in the project.
+- We have to create a separate CSS file inside the "src" folder with an extension of ".css" and import it in the parent component "App.jsx".
+
+4. Module CSS :
+
+- It is a type of CSS where we will be maintaining one CSS file for each component.
+- Whenever we are using module CSS, we have to create a separate CSS file for each component with an extension of ".module.css" and import it in the component.
+  e.g : filename.module.css
+
+# useEffect():
+
+- It is a Hook in React.
+- It allows us to perform side effects in functional components.
+- It is used for fetching data from an API, updating the document title, and more.
+- It has 3 trpes of dependencies:
+  - No dependency :- useEffect(() => {})
+  - Empty dependency :- useEffect(() => {}, [])
+  - Value dependency :- useEffect(() => {}, [value])
+
+# Lists in React:
+
+- To display data in an ordered format.
+- The map() method is used for traversing the array/list.
+
+Example:-
+import React, { useState, useEffect } from "react";
+
+const UserData = () => {
+const [data, setData] = useState([]);
+
+const getUsers = async () => {
+const response = await fetch("https://jsonplaceholder.typicode.com/users");
+
+    const data = await response.json();
+    setData(data);
+    console.log(data);
+
+};
+
+useEffect(() => {
+getUsers();
+}, []);
+
+return (
+
+<div>
+{data.map((item, index) => {
+return (
+<div key={item.id}>
+<p>Name: {item.name}</p>
+<p>Email: {item.email}</p>
+<p>Address: {item.address.street}</p>
+<p>Company: {item.company.name}</p>
+</div>
+);
+})}
+</div>
+);
+};
+
+export default UserData;
+
+# Reference in React:
+
+- It is a inbuilt object in React.
+- It is used to target elements in react.
+- By default it will be having key-value pair of "current: undefined".
+- ref will always uses Real DOM.
+- In Functional Component, we have to use useRef() Hook to create reference.
+- e.g: const inputRef = useRef();
+
+example:-
+import React, { useRef } from "react";
+
+const Reference = () => {
+const reference = useRef();
+console.log(reference); // {current: undefined}
+let changeColor = () => {
+reference.current.style.color = "red";
+}
+return(
+
+  <div>
+    <h1 ref={reference}>Reference</h1>
+    <button onClick={changeColor}>Click</button>
+  </div>
+)}
+export default Reference
+
+# Form Handling in React:
+
+1. Uncontrolled Forms
+2. Controlled Forms
+
+## UnControlled Forms
+
+- It is a form where it is created using reference concept.
+- In Functional components, we have to use useRef() Hook to create uncontrolled form.
+- These forms are completely handled by DOM itself.
+- Suppose if we have to take input from user, first the data will be taken by DOM and then we will be taking the data from DOM.
+
+example:-
+import React, { useRef } from "react";
+
+const UncontrolledForm = () => {
+const fName = useRef();
+const lName = useRef();
+
+const handleSubmit = (e) => {
+e.preventDefault();
+const name = {
+firstName: fName.current.value,
+lastName: lName.current.value,
+};
+console.log(name);
+};
+
+return (
+
+<form>
+<input type="text" placeholder="First Name" ref={fName} />
+<input type="text" placeholder="Last Name" ref={lName} />
+<button onClick={handleSubmit}> Submit </button>
+</form>
+)};
+export default UncontrolledForm;
+
+## Controlled Form
+
+- Thse forms are created using states in React.
+- In functional component we use useState() to create controlled forms.
+- These Forms are completely handled by developers where we will be taking the data from the users by using "onChange" event.
+  example:-
+  import React, { useState } from "react";
+
+const ControlledForm = () => {
+const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+
+const getName = (e) => {
+setName(e.target.value);
+};
+const getEmail = (e) => {
+setEmail(e.target.value);
+};
+const submitData = (e) => {
+e.preventDefault();
+let data = {
+name: name,
+email: email,
+password: password,
+};
+console.log(data);
+setEmail("");
+setName("");
+setPassword("");
+};
+return (
+
+<form>
+<label>Name: </label>
+<input type="text" value={name} onChange={getName} /> <br />
+<label>Email: </label>
+<input type="email" value={email} onChange={getEmail} /> <br />
+<label>Password: </label>
+<input
+type="password"
+value={password}
+onChange={(e) => setPassword(e.target.value)}
+/>
+<br />
+<button onClick={submitData}>Submit</button>
+</form>
+)};
+export default ControlledForm;
+
+# useContext():-
+
+- Context is a way to share data between components without having to pass props down the component tree.
+- useContext() is a hook that allows you to consume context values in your functional components.
+- To create a context, use the createContext() method. This returns a Context object that can be used to provide and consume values.
+- To provide a value to a child component, use the "Context.Provider" component. This component accepts a value prop that is passed down to child components.
+- To consume a value in a child component, use the useContext() hook. This hook takes a Context object as its argument and returns the current value of the context.
+- We can use multiple context values in a single component by nesting
+  Context.Provider components.
+- Overuse of context can make our code harder to understand and maintain.
+
+# React Router-
+
+## What is a Router in React JS -
+
+A router in React JS is a library that allows us to navigate between different pages or views within a single-page application (SPA). It manages the URLs of your application and maps them to the appropriate components to render.
+
+## Why do we need Router in React JS
+
+- A router is needed in React JS to provide a seamless user experience when navigating through different parts of a SPA. Without a router, you would have to manually manage the state of the application and manually render different components based on the current URL.
+
+## How to use Router in React JS
+
+- To use a router in React JS, you need to first install a router library such as "react-router-dom" using a package manager like npm. Once installed, you can import the necessary components from the library, such as "BrowserRouter", "Routes", "Route", and "Link", and use them in your React components to define the routes and navigation behaviour of your application.
+- "BrowserRouter" is a component that should wrap your entire application and provides the history and location objects to your components. The history object keeps track of the browser's history, and the location object contains information about the current URL.
+- "Routes" is a component that wraps multiple Route components and renders Route that matches the current URL.
+- "Route" is a component that defines a route in your application. You can specify the path for the route and the component that should be rendered when the route is matched.
+- "Link" is a component that provides declarative, accessible navigation around your application. It creates an HTML anchor tag with the appropriate href attribute based on the specified path.
+- Nested-Routes - You can also define nested routes in React JS by using the Route component inside another Route component. This allows you to create more complex routes and nested navigation in your application.
+- Route Parameters - You can also define route parameters in React JS by adding a colon followed by a parameter name in the path of the Route component. The parameter value can then be accessed in the component that is rendered for that route.
+- Route-Guards - You can also add route guards in React JS to protect certain routes from being accessed by unauthorized users. This can be done by adding a function that checks if the user is authenticated before allowing access to the route.
