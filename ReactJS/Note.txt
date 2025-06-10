@@ -1,3 +1,16 @@
+Q. What is Multi-page-application ?
+
+- It is an application where it will be having multiple pages, or multiple HTML files.
+- If we try to navigate from one page to another page everytime it is going to refresh or each time DOM structure will be created.
+- So this makes applications slower.
+- We can create multi-page-application using only HTML, CSS and JavaScript.
+
+Q. What is Single-page Application ?
+
+- It is an application where it will be having single page, or single HTML file.
+- If we try to navigate from one page to another page it will not gonna refresh, because we will be staying in a the same HTML file, but we are moving from one component to another component.
+- So this makes applications faster.
+- To create a Single-page application(SPA) we need some advance concept like angula, jQuery or React.JS etc.. .
 
 # ReactJS
 
