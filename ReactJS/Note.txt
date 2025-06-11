@@ -1,74 +1,70 @@
+Q. What is Multi-page-application ?
+- It is an application where it will be having multiple pages, or multiple HTML files.
+- If we try to navigate from one page to another page everytime it is going to refresh or each time DOM structure will be created.
+- So this makes applications slower.
+- We can create multi-page-application using only HTML, CSS and JavaScript.
+
+Q. What is Single-page Application ?
+- It is an application where it will be having single page, or single HTML file.
+- If we try to navigate from one page to another page it will not gonna refresh, because we will be staying in a the same HTML file, but we are moving from one component to another component.
+- So this makes applications faster.
+- To create a Single-page application(SPA) we need some advance concept like angula, jQuery or React.JS etc.. .
 
 # ReactJS
-
 - It is a JavaScript library (collection of pre-defined codes).
 - It is used to build user interfaces.
 
 ## Features of ReactJS
-
 1. Single-Page-Application (SPA)
-
 - e.g :- Whatsapp, facebook, Gmail, etc ..
 
 2. Virtual DOM
 3. Component based Architecture(CBA):- React follows CBA, because we can reuse the components, better code maintainability.
-
 - Web pages will be divided into small parts and that small parts are called components.
 - Components can be reused in different web pages.
 
 ## Folder Structure of ReactJS
-
     After successfully installation of react.js, we will be getting some default folders and files.
 
 1. node_modules :
-
 - It is a folder where all the pre-defined codes and dependencies of react.js will be present.
 - We don't need to change anything in this folder.
 
 2. public :
-
 - This folder conatins the main structure of the webpage.
   The only important file we have to maintain is "index.html".
 
 3. src :
-
 - It is a source folder where we are going to write our codes.
-- The 2 important files we have to maintain is "index.js"/main.jsx and "App.js".
+- The 2 important files we have to maintain is "index.js"/main.jsx and "App.js/App.jsx".
   - index.js : It is considered as a root file of react.js
   - App.js : It is considered as parent component of react.js
 
 4. package.json & package-lock.json :
-
 - These are the two files where it is considered as directories of the react folder.
 - It will give all the information about libraries present in the project.
 
 ## Rules while creating a Component in ReactJS
-
 1. First letter should be capital.
 2. It should be written in PascalCase.
 3. File extension of component is ".js" or ".jsx".
    e.g : App.jsx , App.js , Content.jsx
 
 # What is JSX ?
-
 - it is a combitation of JavaScript and XML (Extensible Markup Language).
 
 ## Difference between HTML and XML
-
 1. - In HTML we will be using an attribute as "class"
-
 - In XML we will be using an attribute as "className"
 
 2. - All the events in HTML we use are in lowercase.
      e.g : onclick, onmouseover
-
 - In XML we use events in camelCase.
   e.g: onMouseOver, onClick
 
 3. - In HTML we can write two or more different tags/elements
      e.g: <h1> This is heading 1</h1>
      <h1> This is heading 2</h1>
-
 - In XML we have to wrap all the elements into one parent container.
   e.g: <div>
   <h1> This is heading 1</h1>
@@ -76,15 +72,12 @@
   </div>
 
 # React Project Setup
-
 ## Using CRA(create-react-app)
-
 - npx create-react-app <project-name>
 - cd <project-name>
 - npm start (or) npm run start
 
 ## Using Vite
-
 - npm create vite@latest <project-name>
 - cd <project-name>
 - npm install
@@ -94,12 +87,10 @@
   Now we have to maintain two important files in "src" folder - index.js(main.jsx) and App.jsx.
 
 1. index.js(main.jsx) :
-
 - It is considered as a root file of react.js project.
 - We are using this file to create root between index.html and App.jsx.
 
 2. App.jsx :
-
 - It is considered as parent component of react.js project.
 - It is a component where we are going to write our codes.
 
@@ -192,13 +183,11 @@ return (
 export default App;
 
 ## Types of Components
-
 - There are 2 types of components in react.
   1. Class Based Component
   2. Functional Component or Function Based Component
 
 # Difference between Class Component and Functional Component
-
 - Class Component :-
   - Use class keyword and class name
   - Statefull
@@ -240,14 +229,12 @@ export default ClassComponent;
 export default Navbar;
 
 # Props
-
 - Props are inbuilt features of react.
 - Props are used to pass data from parent to child component.
 - Props are immutable, it means once the value is passed from parent component, it can't be changed.
 - Props are uni-directional.
 
 e.g :-
-
 - Write a program to send a string data as props.
   App.jsx :
   import React from "react";
