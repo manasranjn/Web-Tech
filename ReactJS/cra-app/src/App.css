@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    background-color: #FF5200;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo h1{
+    font-size: 30px;
+    color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navlinks{
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.navlinks ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 22px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navlinks ul li a{
+    text-decoration: none;
+    color: white;
+}
+#app{
+    background-color: #FF5200;
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    cursor: pointer;
+}
+#signin{
+    background-color: black;
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }

@@ -87,12 +87,10 @@ Q. What is Single-page Application ?
   Now we have to maintain two important files in "src" folder - index.js(main.jsx) and App.jsx.
 
 1. index.js(main.jsx) :
-
 - It is considered as a root file of react.js project.
 - We are using this file to create root between index.html and App.jsx.
 
 2. App.jsx :
-
 - It is considered as parent component of react.js project.
 - It is a component where we are going to write our codes.
 
@@ -185,13 +183,11 @@ return (
 export default App;
 
 ## Types of Components
-
 - There are 2 types of components in react.
   1. Class Based Component
   2. Functional Component or Function Based Component
 
 # Difference between Class Component and Functional Component
-
 - Class Component :-
   - Use class keyword and class name
   - Statefull
@@ -233,14 +229,12 @@ export default ClassComponent;
 export default Navbar;
 
 # Props
-
 - Props are inbuilt features of react.
 - Props are used to pass data from parent to child component.
 - Props are immutable, it means once the value is passed from parent component, it can't be changed.
 - Props are uni-directional.
 
 e.g :-
-
 - Write a program to send a string data as props.
   App.jsx :
   import React from "react";
