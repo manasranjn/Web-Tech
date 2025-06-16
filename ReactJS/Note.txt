@@ -369,7 +369,6 @@ return (
 export default SubContent;
 
 # Hooks:
-
 - Hooks are like inbuilt methods in react.
 - hooks always starts with a prefix "use".
 - Whenever we want to use a hook, we have to import it from "react", import { useState } from "react". Import statement is mandatory.
@@ -380,14 +379,12 @@ export default SubContent;
   - useReducer ... etc
 
 # States in React:
-
 - States are used to create dynamic data in the UI.
 - States are mutable, states value can be changed.
 - States are local, states can only be used inside the component.
-- By default Functional Component doesn't have states. But we can add states using Hooks "useStates".
+- By default Functional Component doesn't have states. But we can add states using Hooks "useState".
 
 ## UseState:
-
 - It is a Hook where we use it in Functional Component to create states.
 - We can pass or store any type of data in the states.(string, number, object, array, boolean)
 - Syntax:
@@ -458,24 +455,19 @@ Reset
 export default Counter;
 
 # Types of CSS in React:
-
 1. Inline CSS :
-
 - It is an tyoe of css where we will be applying for individually inside one particular tag using style attribute.
 - The CSS properties should be writen in camelCase inside an expression like style={{ color: "red" }} in the form of Object inside the style attribute of the tag.
 
 2. Style Object :
-
 - In style object we write the styles in a object, which written outside the JSX and inside the same component.
 
 3. Global CSS :
-
 - It is a type of CSS where we will be maintaining one CSS file for the entire react project.
 - It will target all the Components in the project.
 - We have to create a separate CSS file inside the "src" folder with an extension of ".css" and import it in the parent component "App.jsx".
 
 4. Module CSS :
-
 - It is a type of CSS where we will be maintaining one CSS file for each component.
 - Whenever we are using module CSS, we have to create a separate CSS file for each component with an extension of ".module.css" and import it in the component.
   e.g : filename.module.css

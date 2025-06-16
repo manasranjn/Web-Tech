@@ -1,0 +1,33 @@
+.counter{
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+.counter h1{
+    font-size: 40px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.global{
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
