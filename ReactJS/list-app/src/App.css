@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.top-navbar{
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  color: white;
+  height: 50px;
+  align-items: center;
+  padding: 0px 50px;
+}
+.contact{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.contact .email{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.contact .email a{
+  text-decoration: none;
+  color: white;
+}
+.contact .location{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.social{
+  display:  flex;
+  align-items: center;
+  gap: 15px;
+  color: green;
+  font-size: 25px;
+}
+
+.main-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  height: 100px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+}
+.main-navbar img{
+  height: 50px;
+}
+.main-navbar ul{
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  list-style: none;
+  align-items: center;
+}
+.main-navbar button{
+  background-color: green;
+  padding: 15px 35px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px
+}
+
+.about{
+  margin: 50px;
+}
+#heading{
+  text-align: center;
+}
+#heading h2{
+  font-size: 45px;
+  width: 30%;
+margin: auto;
+}
+#heading p{
+  font-size: 18px;
+  width: 50%;
+  margin: 15px auto;
+  color: gray;
+  line-height: 1.4;
+}
+
+.feedbacks{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 50px 20px;
+}
+.box{
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+.profile{
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin: 10px 0px;
+}
+.profile img{
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid green;
+}
+.info h3{
+  font-size: 30px;
+}
+.info p{
+  color: green;
+  font-size: 22px;
+}
+.review{
+  margin-left: 105px;
+  font-size: 22px;
+  color: grey;
+  line-height: 1.4;
+}
