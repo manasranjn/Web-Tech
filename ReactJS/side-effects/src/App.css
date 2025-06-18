@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all-post{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+.post{
+    background-color: gainsboro;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+}

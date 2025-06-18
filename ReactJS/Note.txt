@@ -473,7 +473,6 @@ export default Counter;
   e.g : filename.module.css
 
 # useEffect():
-
 - It is a Hook in React.
 - It allows us to perform side effects in functional components.
 - It is used for fetching data from an API, updating the document title, and more.
@@ -483,7 +482,6 @@ export default Counter;
   - Value dependency :- useEffect(() => {}, [value])
 
 # Lists in React:
-
 - To display data in an ordered format.
 - The map() method is used for traversing the array/list.
 
