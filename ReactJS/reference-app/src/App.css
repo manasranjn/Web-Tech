@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#registration{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #213448;
+}
+#form{
+    background-color: #F564A9;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    max-width: 400px;
+}
+#form input{
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+#form button{
+    background-color: #213448;
+    color: white;
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
