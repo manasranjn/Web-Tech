@@ -524,7 +524,6 @@ return (
 export default UserData;
 
 # Reference in React:
-
 - It is a inbuilt object in React.
 - It is used to target elements in react.
 - By default it will be having key-value pair of "current: undefined".
@@ -551,12 +550,10 @@ return(
 export default Reference
 
 # Form Handling in React:
-
 1. Uncontrolled Forms
 2. Controlled Forms
 
 ## UnControlled Forms
-
 - It is a form where it is created using reference concept.
 - In Functional components, we have to use useRef() Hook to create uncontrolled form.
 - These forms are completely handled by DOM itself.
@@ -589,7 +586,6 @@ return (
 export default UncontrolledForm;
 
 ## Controlled Form
-
 - Thse forms are created using states in React.
 - In functional component we use useState() to create controlled forms.
 - These Forms are completely handled by developers where we will be taking the data from the users by using "onChange" event.
@@ -639,7 +635,6 @@ onChange={(e) => setPassword(e.target.value)}
 export default ControlledForm;
 
 # useContext():-
-
 - Context is a way to share data between components without having to pass props down the component tree.
 - useContext() is a hook that allows you to consume context values in your functional components.
 - To create a context, use the createContext() method. This returns a Context object that can be used to provide and consume values.
@@ -650,17 +645,13 @@ export default ControlledForm;
 - Overuse of context can make our code harder to understand and maintain.
 
 # React Router-
-
 ## What is a Router in React JS -
-
 A router in React JS is a library that allows us to navigate between different pages or views within a single-page application (SPA). It manages the URLs of your application and maps them to the appropriate components to render.
 
 ## Why do we need Router in React JS
-
 - A router is needed in React JS to provide a seamless user experience when navigating through different parts of a SPA. Without a router, you would have to manually manage the state of the application and manually render different components based on the current URL.
 
 ## How to use Router in React JS
-
 - To use a router in React JS, you need to first install a router library such as "react-router-dom" using a package manager like npm. Once installed, you can import the necessary components from the library, such as "BrowserRouter", "Routes", "Route", and "Link", and use them in your React components to define the routes and navigation behaviour of your application.
 - "BrowserRouter" is a component that should wrap your entire application and provides the history and location objects to your components. The history object keeps track of the browser's history, and the location object contains information about the current URL.
 - "Routes" is a component that wraps multiple Route components and renders Route that matches the current URL.
