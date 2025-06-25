@@ -36,7 +36,7 @@ const dog = {
         console.log("Bark! Bark!");
     },
 };
-// dog.makeSound()
+dog.makeSound()
 
 
 const person = {
@@ -54,42 +54,42 @@ student.study = function () {
 // student.greet()
 // student.study()
 
-//! Class and Constructor
-class Example {
-    constructor(name, age) {
-        this.name = name
-        this.age = age
-    }
-    sayHello() {
-        console.log(`My name is ${this.name}, age is ${this.age}`);
-    }
+// //! Class and Constructor
+// class Example {
+//     constructor(name, age) {
+//         this.name = name
+//         this.age = age
+//     }
+//     sayHello() {
+//         console.log(`My name is ${this.name}, age is ${this.age}`);
+//     }
 
-    printHello() {
-        console.log("Hello everyone");
-    }
-}
+//     printHello() {
+//         console.log("Hello everyone");
+//     }
+// }
 
-const obj1 = new Example("Tejash", 20)
-// obj1.sayHello()
-// obj1.printHello()
+// const obj1 = new Example("Tejash", 20)
+// // obj1.sayHello()
+// // obj1.printHello()
 
-//! Inheritance
-class Parent {
-    sayHello() {
-        console.log("Parent Class");
+// //! Inheritance
+// class Parent {
+//     sayHello() {
+//         console.log("Parent Class");
 
-    }
-}
-class Child extends Parent {
-    greet() {
-        console.log("Hello everyone");
-    }
-    sayHello() {
-        console.log("Child Class");
+//     }
+// }
+// class Child extends Parent {
+//     greet() {
+//         console.log("Hello everyone");
+//     }
+//     sayHello() {
+//         console.log("Child Class");
 
-    }
-}
+//     }
+// }
 
-const childObj = new Child()
-childObj.greet()
-childObj.sayHello()
+// const childObj = new Child()
+// childObj.greet()
+// childObj.sayHello()
