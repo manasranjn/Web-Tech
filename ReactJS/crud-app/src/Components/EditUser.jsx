@@ -1,12 +1,34 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 const EditUser = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
+  const params = useParams();
+  console.log(params);
+
   const navigate = useNavigate();
+
+  const getUser = () => {
+    axios
+      .get(`http://localhost:5000/users/${params.id}`)
+      .then((res) => {
+        console.log(res);
+        setName(res.data.name);
+        setEmail(res.data.email);
+        setPhone(res.data.phone);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    getUser();
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +38,13 @@ const EditUser = () => {
       phone,
     };
     console.log(data);
-    navigate("/");
+    axios
+      .put(`http://localhost:5000/users/${params.id}`, data)
+      .then((res) => {
+        console.log(res);
+        navigate("/"); // redirect to home page
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
