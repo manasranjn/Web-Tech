@@ -6,11 +6,18 @@ const CreateUser = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [error, setError] = useState("");
+  const [failed, setFailed] = useState(false);
 
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!name || !email || !phone) {
+      console.log("Please enter all fields");
+      setError("Please enter all fields");
+      return;
+    }
 
     const data = {
       name,
@@ -28,6 +35,7 @@ const CreateUser = () => {
       .catch((err) => {
         console.log(err);
         console.log("Error creating user");
+        setFailed(true);
       });
   };
 
@@ -38,6 +46,7 @@ const CreateUser = () => {
         <input
           type="text"
           placeholder="Enter your name"
+          required
           className="px-4 py-2 text-lg bg-white rounded-md outline-none border-none"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -45,6 +54,7 @@ const CreateUser = () => {
         <input
           type="email"
           placeholder="Enter your email"
+          required
           className="px-4 py-2 text-lg bg-white rounded-md outline-none border-none"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -52,6 +62,7 @@ const CreateUser = () => {
         <input
           type="tel"
           placeholder="Enter your phone"
+          required
           className="px-4 py-2 text-lg bg-white rounded-md outline-none border-none"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
@@ -63,6 +74,8 @@ const CreateUser = () => {
         >
           Create User
         </button>
+        {error && <p className="text-red-500">{error}</p>}
+        {failed && <p className="text-red-500">Failed to create user</p>}
       </form>
     </div>
   );
