@@ -38,11 +38,11 @@ const Home = () => {
   };
 
   return (
-    <div className="grid grid-cols-3 gap-5 p-20">
+    <div className="grid grid-cols-3 md:grid-cols-2 max-sm:grid-cols-1 gap-5 p-20 max-sm:p-8">
       {allData.map((user) => (
         <div
           key={user.id}
-          className="bg-gray-700 text-white p-6 rounded-lg text-2xl"
+          className="bg-gray-700 text-white p-6 rounded-lg text-2xl max-sm:text-sm"
         >
           <h2>
             Name: <span>{user.name}</span>
@@ -55,13 +55,13 @@ const Home = () => {
           </h2>
           <div className="flex justify-between mt-4">
             <button
-              className="px-6 py-2 text-base rounded-md bg-blue-400 text-white cursor-pointer"
+              className="px-6 py-2 max-sm:px-4 max-sm:py-1 max-sm:text-sm text-base rounded-md bg-blue-400 text-white cursor-pointer"
               onClick={() => navigate(`/edit-user/${user.id}`)}
             >
               Edit
             </button>
             <button
-              className="px-6 py-2 text-base rounded-md bg-red-400 text-white cursor-pointer"
+              className="px-6 py-2 max-sm:px-4 max-sm:py-1 max-sm:text-sm text-base rounded-md bg-red-400 text-white cursor-pointer"
               onClick={() => deleteUser(user.id)}
             >
               Delete
